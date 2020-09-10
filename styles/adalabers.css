@@ -49,7 +49,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  font-family: opensans;
+  font-family: Open Sans;
 }
 .girl-text {
   display: flex;
@@ -61,7 +61,7 @@ body {
   color: #54585a;
   font-size: 16px;
   text-align: center;
-  font-family: opensans-regular;
+  font-family: Open Sans;
   line-height: 24px;
 }
 .icons {
