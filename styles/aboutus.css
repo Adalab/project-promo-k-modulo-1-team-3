@@ -1,0 +1,36 @@
+.strengths,
+.weakness {
+  background-color: #b8b8b9;
+}
+title {
+  font-family: rubik;
+  letter-spacing: normal;
+  text-align: center;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.text1,
+.text2,
+.text3 {
+  font-family: open sans;
+  text-align: center;
+}
+
+.title1 {
+  width: 89px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.88;
+  color: #14d9c4;
+}
+.title2,
+.title3 {
+  color: #099d8d;
+  width: 290px;
+  height: 45px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2.05;
+}
