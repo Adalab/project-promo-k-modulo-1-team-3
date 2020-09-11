@@ -13,3 +13,182 @@ body {
         margin: auto;
     }
 }
+
+ /* ESTILOS HEADER */
+ .header {
+    display: block;
+    width: 100vw; 
+    height: 105px;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(9, 157, 141, 0.95);
+  }
+  /* NOMBRE EQUIPO */
+  .headername {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(9, 157, 141, 0.95);
+    opacity: 95%;
+  }
+  /* MENÚ */
+  .teamname {
+    line-height: 30px;
+    font-family: "rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color: white;
+  }
+  .menu {
+    display: block;
+    width: 100vw;
+    height: 45px;
+  }
+  .headermenu {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 17px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: #14d9c4;
+  }
+  /* LINKS MENÚ */
+  .team,
+  .aboutus,
+  .contact {
+    line-height: 30px;
+    font-family: "rubik", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-decoration: none;
+    color: white;
+  }
+  .team {
+    width: 56px;
+    height: 30px;
+  }
+  .aboutus {
+    width: 121px;
+    height: 30px;
+  }
+  .contact {
+    width: 80px;
+    height: 30px;
+  }
+  /* ESTILOS HERO */
+
+  /* IMAGEN HERO */
+  .image {
+    display: block;
+    position: static;
+    width: 100vw;
+    height: 421px;
+    z-index: auto;
+  }
+  /* LEMA HERO */
+  .motto {
+    position: relative;
+    width: auto;
+    height: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+    top: -40px;
+    background-color: white;
+  }
+  .mottotext {
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    margin: auto;
+  }
+
+  .adalabers-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .who-we-are-h1 {
+    color: #099d8d;
+    font-size: 24px;
+    font-family: Rubik;
+    margin-top: 30px;
+    line-height: 45px;
+  }
+  
+  .girl-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .girl-image {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 180px;
+    border: solid 5px #b8b8b9;
+  }
+  .girl-name {
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Open Sans;
+  }
+  .girl-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .girl-description {
+    color: #54585a;
+    font-size: 16px;
+    text-align: center;
+    font-family: Open Sans;
+    line-height: 24px;
+  }
+  .icons {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    justify-content: space-between;
+  }
