@@ -13,7 +13,7 @@ body {
     margin: auto;
   }
 }
-
+/*ESTILOS ADALABERS*/
 .adalabers-container {
   width: 100%;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+/*ESTILOS TÍTULO QUIÉNES SOMOS*/
 .who-we-are-h1 {
   color: #099d8d;
   font-size: 24px;
@@ -29,19 +29,28 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+/*ESTILOS SECCIÓN CHICA(S)*/
 .girl-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
+
+/*ESTILO IMAGEN CHICA(S)*/
 .girl-image {
   margin-top: 30px;
   margin-bottom: 15px;
   width: 180px;
   border: solid 5px #b8b8b9;
 }
+/*ESTILO TODO TEXTO CHICA(S)*/
+.girl-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*ESTILO NOMBRE CHICA(S)*/
 .girl-name {
   color: #000000;
   margin-top: 5px;
@@ -51,12 +60,8 @@ body {
   text-align: center;
   font-family: Open Sans;
 }
-.girl-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
+/*ESTILO DESCRIPCIÓN CHICA(S)*/
 .girl-description {
   color: #54585a;
   font-size: 16px;
@@ -64,6 +69,8 @@ body {
   font-family: Open Sans;
   line-height: 24px;
 }
+
+/*ESTILO ICONOS RRSS*/
 .icons {
   display: flex;
   width: 25%;
@@ -73,4 +80,4 @@ body {
   font-size: 16px;
   justify-content: space-between;
 }
-/*falta punto entre iconos y luego ajustar espacio; poner este color en los iconos color: #099d8d; y meter font family que falta*/
+/*falta punto entre iconos y luego ajustar espacio y margenes; poner este color en los iconos color: #099d8d; y meter font family que falta*/
