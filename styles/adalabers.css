@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 768px;
+  width: 100%;
+}
+
+@media all and (min-width: 500px) {
+  body {
+    margin: auto;
+  }
+}
+
+.adalabers-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.who-we-are-h1 {
+  color: #099d8d;
+  font-size: 24px;
+  font-family: Rubik;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.girl-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.girl-image {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  border: solid 5px #b8b8b9;
+}
+.girl-name {
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Open Sans;
+}
+.girl-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.girl-description {
+  color: #54585a;
+  font-size: 16px;
+  text-align: center;
+  font-family: Open Sans;
+  line-height: 24px;
+}
+.icons {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  justify-content: space-between;
+}
+/*falta punto entre iconos y luego ajustar espacio; poner este color en los iconos color: #099d8d; y meter font family que falta*/
