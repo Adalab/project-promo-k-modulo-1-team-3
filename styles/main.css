@@ -237,11 +237,14 @@ body {
 .icons {
   display: flex;
   width: 25%;
-  justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 16px;
   justify-content: space-between;
+}
+
+.dot {
+  color: #54585a;
 }
 /* FOOTER */
 
