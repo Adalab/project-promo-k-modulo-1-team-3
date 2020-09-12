@@ -1,3 +1,5 @@
+/*del html habría que crear la etiqueta main, que no está... y por otro lado he metido las clases girl-text-1 y girl-description-1 para cada chica para poder trabajar con la tablet y pc. En esos dispositivos como que una chica se alinea a la derecha y la otra a la izquierda*/
+
 * {
   padding: 0;
   margin: 0;
@@ -6,51 +8,50 @@
 body {
   max-width: 768px;
   width: 100%;
+  box-sizing: border-box;
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 320px) /*aquí ponía 500 y he puesto 320px porque creo que los móviles tienen un mínimo de 320px,
+  habrá que decirles al equipo para que lo pongan en index*/ {
   body {
     margin: auto;
   }
 }
-/*ESTILOS ADALABERS*/
+
+/* ADALABERS */
 .adalabers-container {
-  width: 100%;
+  width: 100vw; /*aquí poníamos 100% me dijo Miguel que había que poner 100vw para que se ajuste a su contenedor principal que sería main. por eso hacía el scroll horizonta*/
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/*ESTILOS TÍTULO QUIÉNES SOMOS*/
+
 .who-we-are-h1 {
   color: #099d8d;
   font-size: 24px;
   font-family: Rubik;
   margin-top: 30px;
-  margin-bottom: 30px;
+  line-height: 45px;
 }
-/*ESTILOS SECCIÓN CHICA(S)*/
+
 .girl-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
-
-/*ESTILO IMAGEN CHICA(S)*/
 .girl-image {
   margin-top: 30px;
   margin-bottom: 15px;
   width: 180px;
   border: solid 5px #b8b8b9;
 }
-/*ESTILO TODO TEXTO CHICA(S)*/
 .girl-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 25px;
 }
-/*ESTILO NOMBRE CHICA(S)*/
 .girl-name {
   color: #000000;
   margin-top: 5px;
@@ -61,16 +62,13 @@ body {
   font-family: Open Sans;
 }
 
-/*ESTILO DESCRIPCIÓN CHICA(S)*/
 .girl-description {
   color: #54585a;
   font-size: 16px;
   text-align: center;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   line-height: 24px;
 }
-
-/*ESTILO ICONOS RRSS*/
 .icons {
   display: flex;
   width: 25%;
@@ -81,3 +79,61 @@ body {
   justify-content: space-between;
 }
 /*falta punto entre iconos y luego ajustar espacio y margenes; poner este color en los iconos color: #099d8d; y meter font family que falta*/
+
+@media all and (min-width: 768px) {
+  body {
+    max-width: 1200px;
+  }
+  .who-we-are-h1 {
+    margin-top: 45px;
+    line-height: 45px;
+  }
+  .girl-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /*esto lo he puesto para que el texto y la imagen estén alineados arriba. te lo digo porque es una de las cosas me ha costado pillar jeje*/
+    margin: 0 25px 60px 25px;
+  }
+
+  .girl-2,
+  .girl-4 {
+    flex-direction: row-reverse;
+  }
+  .girl-image {
+    width: 205px;
+  }
+
+  .girl-text-1,
+  .girl-text-3,
+  .girl-text-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*esto sería para que tanto el nombre de la chica como la descripción se alineen en el eje horizontal al inicio*/
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .girl-text-2,
+  .girl-text-4 {
+    align-items: flex-end;
+  }
+
+  .girl-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .girl-description-1,
+  .girl-description-3,
+  .girl-description-5 {
+    text-align: left;
+  }
+
+  .girl-description-2,
+  .girl-description-4 {
+    text-align: right;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  /*falta para el tamaño pc. Muy parecido a tablet, creo que solo cambian medidas y márgenes, no disposición*/
+}
