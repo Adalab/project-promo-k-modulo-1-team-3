@@ -4,6 +4,7 @@
 }
 
 .header {
+  max-width: 768;
   width: 100vw;
   height: 105px;
   box-sizing: border-box;
