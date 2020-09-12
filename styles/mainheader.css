@@ -1,5 +1,3 @@
-/* ESTILOS HEADER */
-
 .header {
   display: block;
   width: 100vw;
@@ -18,6 +16,7 @@
 /* NOMBRE EQUIPO */
 .headername {
   display: block;
+  box-sizing: border-box;
   width: 100vw;
   height: 60px;
   align-items: center;
@@ -77,22 +76,26 @@
   color: white;
 }
 .team {
-  width: 56px;
+  /* width: 56px; */
+  width: 33%;
   height: 30px;
 }
 .aboutus {
-  width: 121px;
+  /* width: 121px; */
+  width: 33%;
   height: 30px;
 }
 .contact {
-  width: 80px;
+  /* width: 80px; */
+  width: 33%;
   height: 30px;
 }
 /* ESTILOS HERO */
-
+.hero {
+}
 /* IMAGEN HERO */
 .image {
-  width: 100vw;
+  width: 100%;
   height: 421px;
   margin: 0;
   display: flex;
@@ -100,8 +103,8 @@
   z-index: -1;
   background-color: #099d8d;
   background-image: url(../images/hero/heroimage.jpg);
-  background-position: center;
-  background-size: cover;
+  background-position: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 421px;
 }
