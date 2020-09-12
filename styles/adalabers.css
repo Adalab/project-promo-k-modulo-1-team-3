@@ -45,6 +45,7 @@ body {
   margin-bottom: 15px;
   width: 180px;
   border: solid 5px #b8b8b9;
+  border-radius: 2%;
 }
 .girl-text {
   display: flex;
@@ -71,14 +72,19 @@ body {
 }
 .icons {
   display: flex;
-  width: 25%;
+  width: 20%;
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 16px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-/*falta punto entre iconos y luego ajustar espacio y margenes; poner este color en los iconos color: #099d8d; y meter font family que falta*/
+/*He cambiado el justify-content a "space-around"*/
+
+.icon {
+  color: #099d8d;
+}
+/*falta punto entre iconos; y meter font family que falta*/
 
 @media all and (min-width: 768px) {
   body {
