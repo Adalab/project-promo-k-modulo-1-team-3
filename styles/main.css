@@ -108,7 +108,7 @@ body {
 }
 /* IMAGEN HERO */
 .image {
-  width: 100vw;
+  width: 100%;
   height: 421px;
   margin: 0;
   display: flex;
@@ -116,8 +116,8 @@ body {
   z-index: -1;
   background-color: #099d8d;
   background-image: url(../images/hero/heroimage.jpg);
-  background-position: center;
-  background-size: cover;
+  background-position: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 421px;
 }
@@ -157,13 +157,13 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
-.triangle-down{
+.triangle-down {
   width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
   border-top: 50px solid white;
-  transform: translate(200px,0);
+  transform: translate(200px, 0);
 }
 
 /* corregido el background */
