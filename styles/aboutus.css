@@ -1,5 +1,4 @@
-.strengths,
-.weaknesses {
+.about-us-container {
   background-color: #b8b8b9;
 }
 title {
@@ -18,8 +17,8 @@ title {
 }
 
 .title1 {
-  width: 89px;
   height: 45px;
+  margin: 15px;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.88;

@@ -143,9 +143,8 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
-
-.strengths,
-.weaknesses {
+/* corregido el background */
+.about-us-container {
   background-color: #b8b8b9;
 }
 .title {
@@ -162,17 +161,21 @@ body {
   font-family: "Open Sans";
   text-align: center;
 }
-
+.text1,
+.text2 {
+  margin-bottom: 30px;
+}
+/* corregido el centro de los títulos */
 .title1 {
-  width: 89px;
+  text-align: center;
   font-size: 24px;
+  margin-bottom: 15px;
   font-weight: 500;
   line-height: 1.88;
   color: #14d9c4;
 }
 .title2,
 .title3 {
-  width: 290px;
   color: #099d8d;
   height: 45px;
   font-size: 22px;
