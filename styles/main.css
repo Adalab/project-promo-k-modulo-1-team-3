@@ -29,6 +29,7 @@ body {
 /* NOMBRE EQUIPO */
 .headername {
   display: block;
+  box-sizing: border-box;
   width: 100vw;
   height: 60px;
   align-items: center;
@@ -103,7 +104,8 @@ body {
   height: 30px;
 }
 /* ESTILOS HERO */
-
+.hero {
+}
 /* IMAGEN HERO */
 .image {
   width: 100vw;
@@ -190,6 +192,11 @@ body {
   font-weight: 500;
   line-height: 1.88;
   color: #14d9c4;
+  padding-top: 30px;
+}
+
+.title2 {
+  padding-top: 30px;
 }
 .title2,
 .title3 {
