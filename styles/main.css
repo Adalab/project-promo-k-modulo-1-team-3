@@ -88,15 +88,18 @@ body {
   color: white;
 }
 .team {
-  width: 56px;
+  /* width: 56px; */
+  width: 33%;
   height: 30px;
 }
 .aboutus {
-  width: 121px;
+  /* width: 121px; */
+  width: 33%;
   height: 30px;
 }
 .contact {
-  width: 80px;
+  /* width: 80px; */
+  width: 33%;
   height: 30px;
 }
 /* ESTILOS HERO */
@@ -174,6 +177,11 @@ body {
 .text2 {
   margin-bottom: 30px;
 }
+
+.text3 {
+  padding-bottom: 45px;
+}
+
 /* corregido el centro de los títulos */
 .title1 {
   text-align: center;
@@ -246,7 +254,7 @@ body {
 }
 .icons {
   display: flex;
-  width: 20%;
+  width: 25%;
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
