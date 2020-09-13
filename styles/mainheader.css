@@ -1,27 +1,25 @@
-/* ESTILOS HEADER */
-
-.header {
-  display: block;
-  width: 100vw;
-  height: 105px;
-  position: fixed;
+* {
   padding: 0;
   margin: 0;
-  top: 0;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
+}
+
+.header {
+  max-width: 768;
+  width: 100vw;
+  height: 105px;
+  box-sizing: border-box;
+  position: fixed;
   background: rgba(9, 157, 141, 0.95);
   opacity: 95%;
 }
 /* NOMBRE EQUIPO */
 .headername {
-  display: block;
-  width: 100vw;
+  width: 100%;
   height: 60px;
   align-items: center;
   align-content: center;
+  justify-content: center;
+  justify-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 0;
@@ -42,7 +40,7 @@
   color: white;
 }
 .menu {
-  display: block;
+  max-width: 768;
   width: 100vw;
   height: 45px;
 }
@@ -77,33 +75,34 @@
   color: white;
 }
 .team {
-  width: 56px;
+  /* width: 56px; */
+  width: 33%;
   height: 30px;
 }
 .aboutus {
-  width: 121px;
+  /* width: 121px; */
+  width: 33%;
   height: 30px;
 }
 .contact {
-  width: 80px;
+  /* width: 80px; */
+  width: 33%;
   height: 30px;
 }
 /* ESTILOS HERO */
+.hero {
+  max-width: 768;
+  width: 100vw;
+  height: 421px;
+  background-image: url(../images/hero/heroimage.jpg);
+}
 
 /* IMAGEN HERO */
 .image {
-  width: 100vw;
-  height: 421px;
-  margin: 0;
-  display: flex;
-  position: relative;
-  z-index: -1;
-  background-color: #099d8d;
-  background-image: url(../images/hero/heroimage.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 421px;
+  /* width: 100%;
+  height: 421px; */
+  /* background-size: contain; */
+  object-fit: contain;
 }
 /* LEMA HERO */
 .motto {
@@ -113,10 +112,10 @@
   margin-left: 15px;
   margin-right: 15px;
   top: -40px;
+  left: 430px;
   justify-items: center;
   justify-content: center;
   background-color: white;
-  opacity: 95%;
 }
 .mottotext {
   width: 260px;

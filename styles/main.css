@@ -10,7 +10,6 @@ body {
 }
 
 /* ESTILOS HEADER */
-
 .header {
   display: block;
   width: 100vw;
@@ -104,11 +103,10 @@ body {
   height: 30px;
 }
 /* ESTILOS HERO */
-.hero {
-}
+
 /* IMAGEN HERO */
 .image {
-  width: 100vw;
+  width: 100%;
   height: 421px;
   margin: 0;
   display: flex;
@@ -116,8 +114,8 @@ body {
   z-index: -1;
   background-color: #099d8d;
   background-image: url(../images/hero/heroimage.jpg);
-  background-position: center;
-  background-size: cover;
+  background-position: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 421px;
 }
