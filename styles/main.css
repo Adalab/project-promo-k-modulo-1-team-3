@@ -204,9 +204,6 @@ body {
   padding-top: 30px;
 }
 
-.title2 {
-  padding-top: 30px;
-}
 .title2,
 .title3 {
   color: #099d8d;
@@ -408,6 +405,8 @@ footer {
     font-weight: 500;
     line-height: 2.05;
   }
+
+  /* ----------ABOUT US SECTION- ENDS------------ */
   /*---------------ADALABERS SECTION -START---------------*/
   main {
     width: 100vw;
@@ -465,6 +464,59 @@ footer {
     text-align: right;
   }
   /*---------------ADALABERS SECTION - END---------------*/
+
+  /*---------------FOOTER SECTION - START----------------*/
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #b8b8b9;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+  .copy2020 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 20px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    margin-top: 25px;
+    color: #b8b8b9;
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+    width: 114px;
+    height: 60px;
+    opacity: 0.75;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #54585a;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+  }
+  .logo {
+    width: 115.9px;
+    height: 45px;
+  }
+  /*------------FOOTER SECTION -ENDS-------------  */
 }
 
 /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
@@ -472,6 +524,69 @@ footer {
 @media all and (min-width: 1200px) {
   main {
     max-width: 1200px;
+  }
+  /* ------------ABOUT US SECTION - START ------------ */
+  .story,
+  .strengths,
+  .weaknesses,
+  .adalabers-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid white;
+    transform: translate(200px, 0);
+  }
+
+  .about-us-container {
+    background-color: #b8b8b9;
+    display: flex;
+    flex-direction: row;
+  }
+  .title {
+    font-family: "Rubik";
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .text1,
+  .text2,
+  .text3 {
+    font-family: "Open Sans";
+    text-align: center;
+  }
+  .text1,
+  .text2 {
+    margin-bottom: 60px;
+    margin-right: 22px;
+    padding-bottom: 45px;
+  }
+
+  .title1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 1.88;
+    color: #14d9c4;
+    padding-top: 45px;
+    margin-bottom: 15px;
+  }
+
+  .title2,
+  .title3 {
+    margin-top: 45px;
+    color: #099d8d;
+    height: 45px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2.05;
   }
 
   /*---------------ADALABERS SECTION - START---------------*/
