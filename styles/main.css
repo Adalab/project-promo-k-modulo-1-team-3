@@ -4,42 +4,27 @@
 }
 
 body {
-  max-width: 768px;
   width: 100%;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
-
-@media all and (min-width: 500px) {
-  body {
-    margin: auto;
-  }
-}
-
 /* ESTILOS HEADER */
+
 .header {
-  display: block;
-  width: 100vw;
+  width: 100%;
   height: 105px;
+  box-sizing: border-box;
   position: fixed;
-  padding: 0;
-  top: 0;
   align-content: center;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   background: rgba(9, 157, 141, 0.95);
+  opacity: 95%;
+  z-index: 2;
 }
 /* NOMBRE EQUIPO */
 .headername {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  width: 100vw;
+  width: 100%;
   height: 60px;
-  align-items: center;
-  align-content: center;
-  background-color: rgba(9, 157, 141, 0.95);
+  text-align: center;
   opacity: 95%;
 }
 /* MENÚ */
@@ -47,12 +32,12 @@ body {
   line-height: 30px;
   font-family: "rubik", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 800;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.88;
   letter-spacing: normal;
   color: white;
+  padding-top: 15px;
 }
 .menu {
   display: block;
@@ -63,14 +48,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
   padding-left: 16px;
   padding-right: 17px;
   padding-top: 8px;
   padding-bottom: 7px;
-  margin-top: 0;
-  margin-bottom: 0;
   list-style: none;
   background-color: #14d9c4;
 }
@@ -103,36 +86,31 @@ body {
 }
 /* ESTILOS HERO */
 
-/* IMAGEN HERO */
-.image {
-  display: block;
-  position: static;
+.hero-image {
   width: 100vw;
-  height: 421px;
-  z-index: auto;
+  margin-top: 60px;
 }
+
 /* LEMA HERO */
 .motto {
   position: relative;
-  width: auto;
-  height: 80px;
   margin-left: 15px;
   margin-right: 15px;
-  top: -40px;
+  top: -30px;
+  text-justify: center;
   background-color: white;
+
 }
 .mottotext {
-  height: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   text-align: center;
-  font-family: "Open Sans-semibold", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.39;
-  margin: auto;
+  line-height: 2;
+  letter-spacing: normal;
 }
 
 /* ABOUT US */
@@ -143,7 +121,19 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
-/* corregido el background */
+
+.story {
+  margin-top: -66px;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 31px solid transparent;
+  border-right: 31px solid transparent;
+  border-top: 31px solid white;
+  margin: -1px auto;
+}
+
 .about-us-container {
   background-color: #b8b8b9;
 }
@@ -165,6 +155,11 @@ body {
 .text2 {
   margin-bottom: 30px;
 }
+
+.text3 {
+  padding-bottom: 45px;
+}
+
 /* corregido el centro de los títulos */
 .title1 {
   text-align: center;
@@ -173,7 +168,9 @@ body {
   font-weight: 500;
   line-height: 1.88;
   color: #14d9c4;
+  padding-top: 30px;
 }
+
 .title2,
 .title3 {
   color: #099d8d;
@@ -185,7 +182,6 @@ body {
 
 /* ADALABERS */
 .adalabers-container {
-  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -210,7 +206,13 @@ body {
   margin-bottom: 15px;
   width: 180px;
   border: solid 5px #b8b8b9;
-  border-radius: 50%;
+  border-radius: 2%;
+}
+.girl-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
 }
 .girl-name {
   color: #000000;
@@ -220,11 +222,6 @@ body {
   font-weight: bold;
   text-align: center;
   font-family: Open Sans;
-}
-.girl-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .girl-description {
@@ -240,7 +237,12 @@ body {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 16px;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+/*He cambiado el justify-content a "space-around"*/
+
+.icon {
+  color: #099d8d;
 }
 
 .dot {
@@ -249,7 +251,6 @@ body {
 /* FOOTER */
 
 footer {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,8 +258,8 @@ footer {
   padding-top: 30px;
   padding-bottom: 45px;
 }
+
 .copy2020 {
-  display: flex;
   height: 20px;
   font-family: "Open Sans";
   font-size: 14px;
@@ -267,7 +268,6 @@ footer {
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
-  text-align: center;
   color: #b8b8b9;
 }
 .menu-footer {
@@ -290,8 +290,385 @@ footer {
   padding-top: 20px;
   padding-bottom: 30px;
 }
+
+.team-1, .team-1:visited, .aboutus-1, .aboutus-1:visited, .contact-1, .contact-1:visited {
+  color: inherit;
+  text-decoration: none;
+}
 .logo {
-  display: flex;
   width: 115.9px;
   height: 45px;
+}
+
+/*------------------------MEDIA QUERIES----------------------*/
+
+/*------------------------BREAKPOINT PARA TABLET----------------------*/
+
+@media all and (min-width: 768px) {
+  /*------------------ABOUT US SECTION -START-------------*/
+  /* ----------ABOUT US SECTION - START----------- */
+  .story,
+  .strengths,
+  .weaknesses,
+  .adalabers-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 31px solid transparent;
+      border-right: 31px solid transparent;
+      border-top: 31px solid white;
+      margin: -1px auto;
+      transform: translate(200px, 0);
+  }
+
+  .about-us-container {
+    background-color: #b8b8b9;
+    display: flex;
+    flex-direction: row;
+  }
+  .title {
+    font-family: "Rubik";
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .text1,
+  .text2,
+  .text3 {
+    font-family: "Open Sans";
+    text-align: center;
+  }
+  .text1,
+  .text2 {
+    margin-bottom: 60px;
+  }
+  .text2 {
+    margin-right: 15px;
+  }
+
+  .text3 {
+    margin-left: 15px;
+    padding-bottom: 45px;
+  }
+
+  .title1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 1.88;
+    color: #14d9c4;
+    padding-top: 45px;
+  }
+
+  .title2,
+  .title3 {
+    margin-top: 45px;
+    color: #099d8d;
+    height: 45px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2.05;
+  }
+
+  /* ----------ABOUT US SECTION- ENDS------------ */
+  /*---------------ADALABERS SECTION -START---------------*/
+  main {
+    width: 100vw;
+  }
+  .who-we-are-h1 {
+    margin-top: 45px;
+    line-height: 45px;
+  }
+  .girl-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /*esto lo he puesto para que el texto y la imagen estén alineados arriba. te lo digo porque es una de las cosas me ha costado pillar jeje*/
+    margin: 0 25px 60px 25px;
+  }
+
+  .girl-2,
+  .girl-4 {
+    flex-direction: row-reverse;
+  }
+  .girl-image {
+    width: 205px;
+  }
+
+  .girl-text {
+    width: 439px;
+  }
+
+  .girl-text-1,
+  .girl-text-3,
+  .girl-text-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*esto sería para que tanto el nombre de la chica como la descripción se alineen en el eje horizontal al inicio*/
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .girl-text-2,
+  .girl-text-4 {
+    align-items: flex-end;
+  }
+
+  .girl-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .girl-description-1,
+  .girl-description-3,
+  .girl-description-5 {
+    text-align: left;
+  }
+
+  .girl-description-2,
+  .girl-description-4 {
+    text-align: right;
+  }
+  /*---------------ADALABERS SECTION - END---------------*/
+
+  /*---------------FOOTER SECTION - START----------------*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  
+    border-top: 1px solid #b8b8b9;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+  .copy2020 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b8b8b9;
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 114px;
+    height: 60px;
+    opacity: 0.75;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #54585a;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .logo {
+    width: 115.9px;
+    height: 45px;
+  }
+  /*------------FOOTER SECTION -ENDS-------------  */
+
+/*------------------------BREAKPOINT PARA DESKTOP----------------------*/
+
+@media all and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+  /* ------------ABOUT US SECTION - START ------------ */
+  .story,
+  .strengths,
+  .weaknesses,
+  .adalabers-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 31px solid transparent;
+      border-right: 31px solid transparent;
+      border-top: 31px solid white;
+      margin: -1px auto;
+      transform: translate(200px, 0);
+  }
+
+  .about-us-container {
+    background-color: #b8b8b9;
+    display: flex;
+    flex-direction: row;
+  }
+  .title {
+    font-family: "Rubik";
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .text1,
+  .text2,
+  .text3 {
+    font-family: "Open Sans";
+    text-align: center;
+  }
+  .text1,
+  .text2 {
+    margin-bottom: 60px;
+    margin-right: 22px;
+    padding-bottom: 45px;
+  }
+
+  .title1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 1.88;
+    color: #14d9c4;
+    padding-top: 45px;
+    margin-bottom: 15px;
+  }
+
+  .title2,
+  .title3 {
+    margin-top: 45px;
+    color: #099d8d;
+    height: 45px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2.05;
+  }
+
+  /*---------------ADALABERS SECTION - START---------------*/
+
+  .who-we-are-h1 {
+    margin-top: 45px;
+    line-height: 45px;
+  }
+  .girl-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /*esto lo he puesto para que el texto y la imagen estén alineados arriba. te lo digo porque es una de las cosas me ha costado pillar jeje*/
+    margin: 0 25px 60px 25px;
+  }
+
+  .girl-2,
+  .girl-4 {
+    flex-direction: row-reverse;
+  }
+  .girl-image {
+    width: 278px;
+  }
+
+  .girl-text {
+    width: 439px;
+  }
+
+  .girl-text-1,
+  .girl-text-3,
+  .girl-text-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*esto sería para que tanto el nombre de la chica como la descripción se alineen en el eje horizontal al inicio*/
+    padding: 45px;
+    margin-top: 20px;
+  }
+
+  .girl-text-2,
+  .girl-text-4 {
+    align-items: flex-end;
+  }
+
+  .girl-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .girl-description-1,
+  .girl-description-3,
+  .girl-description-5 {
+    text-align: left;
+  }
+
+  .girl-description-2,
+  .girl-description-4 {
+    text-align: right;
+  }
+
+  /*---------------ADALABERS SECTION - END---------------*/
+
+  /* ----------FOOTER SECTION - START----------- */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #b8b8b9;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+  .copy2020 {
+    position: relative;
+    top: -30px;
+    justify-content: center;
+    margin-left: 20px;
+    height: 20px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    margin-top: 25px;
+    color: #b8b8b9;
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 30%;
+    width: 114px;
+    height: 60px;
+    opacity: 0.75;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #54585a;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+  }
+  .logo {
+    position: relative;
+    left: -85%;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    width: 115.9px;
+    height: 45px;
+  }
 }
