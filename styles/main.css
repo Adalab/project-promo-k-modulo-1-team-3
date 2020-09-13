@@ -282,16 +282,19 @@ body {
 /* FOOTER */
 
 footer {
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  width: 100%;
+  
   border-top: 1px solid #b8b8b9;
   padding-top: 30px;
   padding-bottom: 45px;
 }
 .copy2020 {
   display: flex;
+    flex-direction: column;
+    align-items: center;
   height: 20px;
   font-family: "Open Sans";
   font-size: 14px;
@@ -324,7 +327,7 @@ footer {
   padding-bottom: 30px;
 }
 .logo {
-  display: flex;
+ 
   width: 115.9px;
   height: 45px;
 }
@@ -465,19 +468,20 @@ footer {
 
   /*---------------FOOTER SECTION - START----------------*/
   footer {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+    width: 100%;
+    d
     border-top: 1px solid #b8b8b9;
     padding-top: 30px;
     padding-bottom: 45px;
   }
   .copy2020 {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    top: -30px;
     justify-content: center;
-
+    margin-left: 20px;
     height: 20px;
     font-family: "Open Sans";
     font-size: 14px;
@@ -493,7 +497,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: flex-end;
+    position: relative;
+    left: 30%;
     width: 114px;
     height: 60px;
     opacity: 0.75;
@@ -511,6 +516,10 @@ footer {
     margin-top: 10px;
   }
   .logo {
+    position: relative;
+    left: -80%;
+    margin-top: 35px;
+    margin-bottom: 60px;
     width: 115.9px;
     height: 45px;
   }
