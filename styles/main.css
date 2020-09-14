@@ -311,6 +311,12 @@ footer {
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  .strengths,
+  .weaknesses {
+    width: 50%;
+  }
+
   .triangle-down {
       width: 0;
       height: 0;
@@ -499,6 +505,12 @@ main {
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  .strengths,
+  .weaknesses {
+    width: 50%;
+  }
+
   .triangle-down {
       width: 0;
       height: 0;
