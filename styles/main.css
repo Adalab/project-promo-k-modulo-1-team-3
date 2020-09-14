@@ -303,7 +303,7 @@ footer {
 
 /*------------------------BREAKPOINT PARA TABLET----------------------*/
 
-/* @media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .story,
   .strengths,
   .weaknesses,
@@ -371,11 +371,11 @@ footer {
     font-size: 22px;
     font-weight: 500;
     line-height: 2.05;
-  } */
+  }
 
   /* ----------ABOUT US SECTION- ENDS------------ */
   /*---------------ADALABERS SECTION -START---------------*/
-  /* main {
+main {
     width: 100vw;
   }
   .who-we-are-h1 {
@@ -433,7 +433,7 @@ footer {
   /*---------------ADALABERS SECTION - END---------------*/
 
   /*---------------FOOTER SECTION - START----------------*/
-  /* footer {
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -482,7 +482,7 @@ footer {
     width: 115.9px;
     height: 45px;
   }  
-   */
+
   /*------------FOOTER SECTION -ENDS-------------  */
 
 /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
