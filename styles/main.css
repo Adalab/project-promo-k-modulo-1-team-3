@@ -383,7 +383,7 @@ footer {
   /* ----------ABOUT US SECTION- ENDS------------ */
   /*---------------ADALABERS SECTION -START---------------*/
 main {
-    width: 100vw;
+    width: 100%;
   }
   .who-we-are-h1 {
     margin-top: 45px;
