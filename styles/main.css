@@ -632,6 +632,9 @@ footer {
   /*---------------ADALABERS SECTION - END---------------*/
 
   /* ----------FOOTER SECTION - START----------- */
+  @media all and(min-width:1200px) {
+    
+  
   footer {
     display: flex;
     flex-direction: row;
@@ -640,46 +643,5 @@ footer {
     border-top: 1px solid #b8b8b9;
     padding-top: 30px;
     padding-bottom: 45px;
-  }
-  .copy2020 {
-    justify-content: center;
-    margin-left: 20px;
-    height: 20px;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    color: #b8b8b9;
-  }
-  .menu-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 114px;
-    height: 60px;
-    opacity: 0.75;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    text-align: right;
-    color: #54585a;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    margin-top: 10px;
-  }
-  .logo {
-    position: relative;
-    left: -100%;
-    margin-top: 35px;
-    margin-bottom: 60px;
-    width: 115.9px;
-    height: 45px;
   }
 }
