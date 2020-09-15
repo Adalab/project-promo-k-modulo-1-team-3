@@ -274,6 +274,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
   width: 114px;
   height: 60px;
   opacity: 0.75;
