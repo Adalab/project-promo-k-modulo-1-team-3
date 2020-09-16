@@ -179,6 +179,7 @@ body {
 
 /* ADALABERS */
 .adalabers-container {
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -246,6 +247,7 @@ body {
 /* FOOTER */
 
 footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -435,47 +437,19 @@ footer {
 /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
 
 @media all and (min-width: 1200px) {
-  main {
-    max-width: 1200px;
-  }
+
+  /* ------------HEADER SECTION START ------------ */
+
   /* ------------ABOUT US SECTION - START ------------ */
-
-
+  .story {
+    padding: 45px 300px 60px 300px;
   }
-  .title {
-    font-family: "Rubik";
-    letter-spacing: normal;
-    font-stretch: normal;
-    font-style: normal;
-    text-align: center;
+  .strengths {
+    padding: 15px 15px 60px 138px;
   }
 
-  .text1,
-  .text2,
-  .text3 {
-    font-family: "Open Sans";
-    text-align: center;
-  }
- 
-  .title1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: 500;
-    line-height: 1.88;
-    color: #14d9c4;
-    padding-top: 45px;
-    margin-bottom: 15px;
-  }
-
-  .title2,
-  .title3 {
-    margin-top: 45px;
-    color: #099d8d;
-    height: 45px;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 2.05;
+  .weaknesses {
+    padding: 15px 138px 60px 15px;
   }
 
   /*---------------ADALABERS SECTION - START---------------*/
@@ -589,4 +563,5 @@ footer {
     width: 115.9px;
     height: 45px;
   }
+}
 }
