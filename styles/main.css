@@ -298,7 +298,6 @@ footer {
 }
 
 /* ------------------------MEDIA QUERIES----------------------
-
 /*------------------------BREAKPOINT PARA TABLET----------------------*/
 
 @media all and (min-width: 768px) {
@@ -518,7 +517,7 @@ main {
     align-items: flex-start; /*esto sería para que tanto el nombre de la chica como la descripción se alineen en el eje horizontal al inicio*/
     /* padding: 45px;
     margin-top: 20px; */
-
+  }
 
   .girl-text-2,
   .girl-text-4 {
