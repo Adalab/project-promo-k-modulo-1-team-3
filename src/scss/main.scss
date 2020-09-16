@@ -301,30 +301,30 @@ footer {
 /*------------------------BREAKPOINT PARA TABLET----------------------*/
 
 @media all and (min-width: 768px) {
-  .story,
-  .adalabers-container {
+  .story {
     padding: 45px 45px 60px 45px;
   }
 
   .about-us-wrapper {
     display:flex;
     flex-direction: row;
-    padding: 15px 45px 60px 45px;
   }
 
-  .strengths, .weaknesses {
-    margin: 0;
+  .strengths {
+    padding: 15px 15px 60px 45px;
+    margin-top: -30px;
+    flex: 1;
   }
 
-  .title {
-    padding-bottom: 15px;
+  .weaknesses {
+    padding: 15px 45px 60px 15px;
+    margin-top: -30px;
+    flex: 1;
   }
 
   /* ----------ABOUT US SECTION- ENDS------------ */
   /*---------------ADALABERS SECTION -START---------------*/
-main {
-    width: 100%;
-  }
+
   .who-we-are-h1 {
     margin-top: 45px;
     line-height: 45px;
@@ -456,13 +456,7 @@ main {
     font-family: "Open Sans";
     text-align: center;
   }
-  .text1,
-  .text2 {
-    margin-bottom: 60px;
-    margin-right: 22px;
-    padding-bottom: 45px;
-  }
-
+ 
   .title1 {
     text-align: center;
     font-size: 24px;
@@ -571,8 +565,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    left: 30%;
     width: 114px;
     height: 60px;
     opacity: 0.75;
