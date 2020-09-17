@@ -68,6 +68,7 @@
   color: #54585a;
 }
 
+// --------------MEDIA QUERY 768------------------
 @media all and (min-width: 768px) {
   .adalabers__title {
     margin-top: 45px;
@@ -97,7 +98,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
 
-    // FALTA ESTAN ESTOS MARCADORES POR REEMPLAZAR CON LOS DE BEM
+    // FALTA ESTAN ESTOS MARCADORES POR REEMPLAZAR CON LOS DE BEM -- Creo que se podría probar anidando: adalabersContainer__girlText que estén dentro de adalabers__adalabersContainer--odd o even, según corresponda
     .girl-text-1,
     .girl-text-3,
     .girl-text-5 {
