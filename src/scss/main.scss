@@ -293,6 +293,13 @@ footer {
   color: inherit;
   text-decoration: none;
 }
+.logo-menu {
+  display: flex;
+  flex-direction: column;
+}
+.logo-container {
+  order: 2;
+}
 .logo {
   width: 115.9px;
   height: 45px;
