@@ -67,3 +67,60 @@
 .adalabersContainer__dot {
   color: #54585a;
 }
+
+@media all and (min-width: 768px) {
+  .adalabers__title {
+    margin-top: 45px;
+    line-height: 45px;
+  }
+  .adalabers__adalabersContainer--odd,
+  .adalabers__adalabersContainer--even {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 25px 60px 25px;
+  }
+
+  .adalabers__adalabersContainer--even {
+    flex-direction: row-reverse;
+  }
+
+  .adalabersContainer__girlImage {
+    width: 205px;
+  }
+
+  .adalabersContainer__girlText {
+    width: 439px;
+  }
+
+  .adalabersContainer__girlName {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    // FALTA ESTAN ESTOS MARCADORES POR REEMPLAZAR CON LOS DE BEM
+    .girl-text-1,
+    .girl-text-3,
+    .girl-text-5 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .girl-text-2,
+    .girl-text-4 {
+      align-items: flex-end;
+    }
+  }
+  .girl-description-1,
+  .girl-description-3,
+  .girl-description-5 {
+    text-align: left;
+  }
+
+  .girl-description-2,
+  .girl-description-4 {
+    text-align: right;
+  }
+}
