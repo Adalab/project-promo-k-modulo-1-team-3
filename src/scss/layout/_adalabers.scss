@@ -1,0 +1,69 @@
+/* ADALABERS */
+.adalabers {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adalabers__title {
+  color: #099d8d;
+  font-size: 24px;
+  font-family: "Rubik";
+  line-height: 45px;
+}
+
+.adalabers__adalabersContainer--odd,
+.adalabers__adalabersContainer--even {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adalabersContainer__girlImage {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  border: solid 5px #b8b8b9;
+  border-radius: 2%;
+}
+.gadalabersContainer__girlText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.adalabersContainer_girlName {
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Open Sans;
+}
+
+.dalabersContainer__girlDescription {
+  color: #54585a;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+}
+.adalabersContainer__icons {
+  display: flex;
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  justify-content: space-around;
+  color: #099d8d;
+}
+
+// .icon {
+//   color: #099d8d;
+// }
+
+.adalabersContainer__dot {
+  color: #54585a;
+}
