@@ -98,7 +98,6 @@ body {
   margin-right: 15px;
   top: -30px;
   background-color: white;
-
 }
 .mottotext {
   padding: 15px;
@@ -289,7 +288,12 @@ footer {
   padding-bottom: 30px;
 }
 
-.team-1, .team-1:visited, .aboutus-1, .aboutus-1:visited, .contact-1, .contact-1:visited {
+.team-1,
+.team-1:visited,
+.aboutus-1,
+.aboutus-1:visited,
+.contact-1,
+.contact-1:visited {
   color: inherit;
   text-decoration: none;
 }
@@ -303,7 +307,7 @@ footer {
 /*------------------------BREAKPOINT PARA TABLET----------------------*/
 
 @media all and (min-width: 768px) {
-/* ------------------------HEADER SECTION -STARTS----------------------*/
+  /* ------------------------HEADER SECTION -STARTS----------------------*/
 
   .header {
     display: flex;
@@ -327,7 +331,7 @@ footer {
     background: none;
   }
 
- /* ------------------------HEADER SECTION -ENDS----------------------*/
+  /* ------------------------HEADER SECTION -ENDS----------------------*/
   /* ------------------------HERO SECTION -BEGINS----------------------*/
 
   .motto {
@@ -341,7 +345,7 @@ footer {
   }
 
   .about-us-wrapper {
-    display:flex;
+    display: flex;
     flex-direction: row;
   }
 
@@ -419,7 +423,6 @@ footer {
     position: relative;
     align-items: start;
     padding: 0 0 60px 0;
-    
   }
 
   .nav-footer {
@@ -427,13 +430,13 @@ footer {
     top: 0;
     right: 0;
   }
-   
+
   .menu-footer {
     padding: 25px 45px 0 0;
     margin-top: 16px;
   }
 
-  .copy2020,{
+  .copy2020 {
     padding: 30px 0 0 45px;
   }
 
@@ -446,57 +449,56 @@ footer {
   }
   /*------------FOOTER SECTION -ENDS-------------  */
 
-/*------------------------BREAKPOINT PARA DESKTOP----------------------*/
+  /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
 
-@media all and (min-width: 1200px) {
+  @media all and (min-width: 1200px) {
+    /* ------------HEADER SECTION START ------------ */
+    .header {
+      padding: 0 138px 0 138px;
+    }
 
-  /* ------------HEADER SECTION START ------------ */
-  .header {
-    padding: 0 138px 0 138px;
+    .menu {
+      width: 50%;
+    }
+
+    .motto {
+      margin: 0 138px 0 138px;
+      top: -60px;
+    }
+
+    /* ------------ABOUT US SECTION - START ------------ */
+    .story {
+      padding: 45px 300px 60px 300px;
+    }
+
+    .about-us-container {
+      margin: auto 138px;
+    }
+
+    .strengths {
+      padding: 15px 30px 60px 138px;
+    }
+
+    .weaknesses {
+      padding: 15px 138px 60px 30px;
+    }
+
+    /*---------------ADALABERS SECTION - START---------------*/
+
+    /*---------------ADALABERS SECTION - ENDS---------------*/
+
+    /* ----------FOOTER SECTION - STARTS----------- */
+    .menu-footer {
+      padding: 25px 138px 0 0;
+    }
+
+    .copy2020 {
+      padding: 30px 0 0 138px;
+    }
+
+    .logo {
+      padding: 15px 0 0 138px;
+    }
   }
-
-  .menu {
-    width: 50%;
-  }
-
-  .motto {
-    margin: 0 138px 0 138px;
-    top: -60px;
-}
-  
-  /* ------------ABOUT US SECTION - START ------------ */
-  .story {
-    padding: 45px 300px 60px 300px;
-  }
-
-  .about-us-container {
-    margin: auto 138px;
-  }
-
-  .strengths {
-    padding: 15px 30px 60px 138px;
-  }
-
-  .weaknesses {
-    padding: 15px 138px 60px 30px;
-  }
-
-  /*---------------ADALABERS SECTION - START---------------*/
-
-  /*---------------ADALABERS SECTION - ENDS---------------*/
-
-  /* ----------FOOTER SECTION - STARTS----------- */
-  .menu-footer {
-    padding: 25px 138px 0 0;
-  }
-
-  .copy2020,{
-    padding: 30px 0 0 138px;
-  }
-
-  .logo {
-    padding: 15px 0 0 138px;
-  }
-}
-/* ----------FOOTER SECTION - ENDS----------- */
+  /* ----------FOOTER SECTION - ENDS----------- */
 }
