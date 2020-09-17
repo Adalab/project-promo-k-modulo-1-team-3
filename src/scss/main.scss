@@ -97,7 +97,6 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   top: -30px;
-  text-justify: center;
   background-color: white;
 
 }
@@ -303,6 +302,39 @@ footer {
 /*------------------------BREAKPOINT PARA TABLET----------------------*/
 
 @media all and (min-width: 768px) {
+/* ------------------------HEADER SECTION -STARTS----------------------*/
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    padding: 0 45px 0 45px;
+  }
+
+  .headername {
+    text-align: left;
+  }
+
+  .menu {
+    height: auto;
+    width: 80%;
+  }
+  .headermenu {
+    padding: 0;
+    justify-content: space-between;
+    background: none;
+  }
+
+ /* ------------------------HEADER SECTION -ENDS----------------------*/
+  /* ------------------------HERO SECTION -BEGINS----------------------*/
+
+  .motto {
+    margin: 0 115px 0 115px;
+    top: -40px;
+  }
+
+  /* ------------------------HERO SECTION -ENDS----------------------*/
   .story {
     padding: 45px 45px 60px 45px;
   }
