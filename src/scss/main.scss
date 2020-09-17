@@ -257,6 +257,13 @@ footer {
   position: relative;
 }
 
+.logo-menu {
+  display: flex;
+  flex-direction: column;
+}
+.logo-container {
+  order: 2;}
+
 .copy2020 {
   height: 20px;
   font-family: "Open Sans";
@@ -592,7 +599,4 @@ footer {
     text-align: right;
   } */
 
-  /*---------------ADALABERS SECTION - END---------------*/
-
-  /* ----------FOOTER SECTION - START----------- */
-}
+  // /*---------------ADALABERS SECTION - END---------------*/
