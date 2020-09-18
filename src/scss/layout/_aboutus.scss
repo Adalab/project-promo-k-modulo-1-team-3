@@ -8,16 +8,10 @@
 .story {
   margin-top: -66px;
   padding-top: 45px;
-}
-
-@media all and (min-width: 768px) {
-  .story {
+  @media all and (min-width: 768px) {
     padding: 45px 45px 60px 45px;
   }
-}
-
-@media all and (min-width: 1200px) {
-  .story {
+  @media all and (min-width: 1200px) {
     padding: 45px 300px 60px 300px;
   }
 }
@@ -25,36 +19,24 @@
 .aboutUS__strengths {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-@media all and (min-width: 768px) {
-  .aboutUs__strengths {
+  @media all and (min-width: 768px) {
     padding: 15px 15px 60px 45px;
     margin-top: -30px;
     flex: 1;
   }
-}
-
-@media all and (min-width: 1200px) {
-  .aboutUs__strengths {
+  @media all and (min-width: 1200px) {
     padding: 15px 30px 60px 138px;
   }
 }
 
 .aboutUS__weaknesses {
   padding-bottom: 45px;
-}
-
-@media all and (min-width: 768px) {
-  .aboutUS__weaknesses {
+  @media all and (min-width: 768px) {
     padding: 15px 45px 60px 15px;
     margin-top: -30px;
     flex: 1;
   }
-}
-
-@media all and (min-width: 1200px) {
-  .aboutUs__weaknesses {
+  @media all and (min-width: 1200px) {
     padding: 15px 138px 60px 30px;
   }
 }
@@ -70,10 +52,7 @@
 
 .aboutUS {
   background-color: #b8b8b9;
-}
-
-@media all and (min-width: 1200px) {
-  .aboutUS {
+  @media all and (min-width: 1200px) {
     margin: auto 138px;
   }
 }
