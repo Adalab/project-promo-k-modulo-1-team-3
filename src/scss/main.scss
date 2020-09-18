@@ -112,68 +112,7 @@ body {
 }
 
 /* ABOUT US */
-.story,
-.strengths,
-.weaknesses,
-.adalabers-container {
-  padding: 30px 15px 30px 15px;
-}
-
-.story {
-  margin-top: -66px;
-  padding-top: 45px;
-}
-
-.strengths {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.weaknesses {
-  padding-bottom: 45px;
-}
-
-.triangle-down {
-  width: 0;
-  height: 0;
-  border-left: 31px solid transparent;
-  border-right: 31px solid transparent;
-  border-top: 31px solid white;
-  margin: -1px auto;
-}
-
-.about-us-container {
-  background-color: #b8b8b9;
-}
-
-.title {
-  font-family: "Rubik";
-  letter-spacing: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 45px;
-  text-align: center;
-  padding-bottom: 15px;
-  font-weight: 500;
-}
-
-.text1,
-.text2,
-.text3 {
-  font-family: "Open Sans";
-  text-align: center;
-}
-
-.title1 {
-  font-size: 24px;
-  color: #14d9c4;
-}
-
-.title2,
-.title3 {
-  color: #099d8d;
-  font-size: 22px;
-}
+@import "./layout/aboutus";
 
 /* ADALABERS */
 .adalabers-container {
@@ -340,27 +279,7 @@ footer {
   }
 
   /* ------------------------HERO SECTION -ENDS----------------------*/
-  .story {
-    padding: 45px 45px 60px 45px;
-  }
-
-  .about-us-wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .strengths {
-    padding: 15px 15px 60px 45px;
-    margin-top: -30px;
-    flex: 1;
-  }
-
-  .weaknesses {
-    padding: 15px 45px 60px 15px;
-    margin-top: -30px;
-    flex: 1;
-  }
-
+ 
   /* ----------ABOUT US SECTION- ENDS------------ */
   /*---------------ADALABERS SECTION -START---------------*/
 
@@ -467,22 +386,7 @@ footer {
     }
 
     /* ------------ABOUT US SECTION - START ------------ */
-    .story {
-      padding: 45px 300px 60px 300px;
-    }
-
-    .about-us-container {
-      margin: auto 138px;
-    }
-
-    .strengths {
-      padding: 15px 30px 60px 138px;
-    }
-
-    .weaknesses {
-      padding: 15px 138px 60px 30px;
-    }
-
+    
     /*---------------ADALABERS SECTION - START---------------*/
 
     /*---------------ADALABERS SECTION - ENDS---------------*/
