@@ -190,7 +190,7 @@ footer {
   padding-bottom: 45px;
 }
 
-.copy2020 {
+.footer__copy2020 {
   height: 20px;
   font-family: "Open Sans";
   font-size: 14px;
@@ -201,7 +201,7 @@ footer {
   letter-spacing: normal;
   color: #b8b8b9;
 }
-.menu-footer {
+.footer__footerMenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,7 +234,7 @@ footer {
   text-decoration: none;
 }
 
-.logo {
+.footerLogo__logo {
   width: 115.9px;
   height: 45px;
 }
@@ -276,7 +276,7 @@ footer {
   }
 
   /* ------------------------HERO SECTION -ENDS----------------------*/
- 
+
   /* ----------ABOUT US SECTION- ENDS------------ */
   /*---------------ADALABERS SECTION -START---------------*/
 
@@ -347,19 +347,19 @@ footer {
     right: 0;
   }
 
-  .menu-footer {
+  .footer__footerMenu {
     padding: 25px 45px 0 0;
     margin-top: 16px;
   }
 
-  .copy2020 {
+  .footer__copy2020 {
     padding: 30px 0 0 45px;
   }
 
-  .logo {
+  .footerLogo__logo {
     padding: 15px 0 0 45px;
   }
-  .menu-footer li {
+  .footer__footerMenu li {
     display: block;
     padding: 8px 0;
   }
@@ -383,21 +383,21 @@ footer {
     }
 
     /* ------------ABOUT US SECTION - START ------------ */
-    
+
     /*---------------ADALABERS SECTION - START---------------*/
 
     /*---------------ADALABERS SECTION - ENDS---------------*/
 
     /* ----------FOOTER SECTION - STARTS----------- */
-    .menu-footer {
+    .footer__footerMenu {
       padding: 25px 138px 0 0;
     }
 
-    .copy2020 {
+    .footer__copy2020 {
       padding: 30px 0 0 138px;
     }
 
-    .logo {
+    .footerLogo__logo {
       padding: 15px 0 0 138px;
     }
   }
