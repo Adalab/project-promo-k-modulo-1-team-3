@@ -18,6 +18,7 @@
 .adalabers__adalabersContainer--even {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .adalabersContainer__girlImage {
@@ -27,7 +28,7 @@
   border: solid 5px #b8b8b9;
   border-radius: 2%;
 }
-.gadalabersContainer__girlText {
+.adalabersContainer__girlText {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +44,7 @@
   font-family: Open Sans;
 }
 
-.dalabersContainer__girlDescription {
+.adalabersContainer__girlDescription {
   color: #54585a;
   font-size: 16px;
   text-align: center;
@@ -63,10 +64,6 @@
   }
 }
 
-// .icon {
-//   color: #099d8d;
-// }
-
 .adalabersContainer__dot {
   color: #54585a;
 }
@@ -85,8 +82,27 @@
     margin: 0 25px 60px 25px;
   }
 
+  .adalabers__adalabersContainer--odd {
+    .adalabersContainer__girlText {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .adalabersContainer__girlDescription {
+      text-align: left;
+    }
+  }
+
   .adalabers__adalabersContainer--even {
     flex-direction: row-reverse;
+    .adalabersContainer__girlText {
+      align-items: flex-end;
+    }
+    .adalabersContainer__girlDescription {
+      text-align: right;
+    }
   }
 
   .adalabersContainer__girlImage {
@@ -100,31 +116,32 @@
   .adalabersContainer__girlName {
     margin-top: 5px;
     margin-bottom: 5px;
-
-    // FALTA ESTAN ESTOS MARCADORES POR REEMPLAZAR CON LOS DE BEM -- Creo que se podría probar anidando: adalabersContainer__girlText que estén dentro de adalabers__adalabersContainer--odd o even, según corresponda
-    .girl-text-1,
-    .girl-text-3,
-    .girl-text-5 {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-      margin-top: 20px;
-    }
-
-    .girl-text-2,
-    .girl-text-4 {
-      align-items: flex-end;
-    }
-  }
-  .girl-description-1,
-  .girl-description-3,
-  .girl-description-5 {
-    text-align: left;
   }
 
-  .girl-description-2,
-  .girl-description-4 {
-    text-align: right;
-  }
+  // FALTA ESTAN ESTOS MARCADORES POR REEMPLAZAR CON LOS DE BEM -- Creo que se podría probar anidando: adalabersContainer__girlText que estén dentro de adalabers__adalabersContainer--odd o even, según corresponda
+  // .girl-text-1,
+  // .girl-text-3,
+  // .girl-text-5 {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   padding: 20px;
+  //   margin-top: 20px;
+  // }
+
+  //   .girl-text-2,
+  //   .girl-text-4 {
+  //     align-items: flex-end;
+  //   }
+  // }
+  // .girl-description-1,
+  // .girl-description-3,
+  // .girl-description-5 {
+  //   text-align: left;
+  // }
+
+  // .girl-description-2,
+  // .girl-description-4 {
+  //   text-align: right;
+  // }
 }
