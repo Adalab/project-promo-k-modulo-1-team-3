@@ -1,0 +1,130 @@
+/* ADALABERS */
+.adalabers {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adalabers__title {
+  color: #099d8d;
+  font-size: 24px;
+  font-family: "Rubik";
+  line-height: 45px;
+}
+
+.adalabers__adalabersContainer--odd,
+.adalabers__adalabersContainer--even {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adalabersContainer__girlImage {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  border: solid 5px #b8b8b9;
+  border-radius: 2%;
+}
+.gadalabersContainer__girlText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.adalabersContainer_girlName {
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Open Sans;
+}
+
+.dalabersContainer__girlDescription {
+  color: #54585a;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+}
+
+.adalabersContainer__icons {
+  display: flex;
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  justify-content: space-around;
+  a {
+    color: #099d8d;
+  }
+}
+
+// .icon {
+//   color: #099d8d;
+// }
+
+.adalabersContainer__dot {
+  color: #54585a;
+}
+
+// --------------MEDIA QUERY 768------------------
+@media all and (min-width: 768px) {
+  .adalabers__title {
+    margin-top: 45px;
+    line-height: 45px;
+  }
+  .adalabers__adalabersContainer--odd,
+  .adalabers__adalabersContainer--even {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 25px 60px 25px;
+  }
+
+  .adalabers__adalabersContainer--even {
+    flex-direction: row-reverse;
+  }
+
+  .adalabersContainer__girlImage {
+    width: 205px;
+  }
+
+  .adalabersContainer__girlText {
+    width: 439px;
+  }
+
+  .adalabersContainer__girlName {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    // FALTA ESTAN ESTOS MARCADORES POR REEMPLAZAR CON LOS DE BEM -- Creo que se podría probar anidando: adalabersContainer__girlText que estén dentro de adalabers__adalabersContainer--odd o even, según corresponda
+    .girl-text-1,
+    .girl-text-3,
+    .girl-text-5 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .girl-text-2,
+    .girl-text-4 {
+      align-items: flex-end;
+    }
+  }
+  .girl-description-1,
+  .girl-description-3,
+  .girl-description-5 {
+    text-align: left;
+  }
+
+  .girl-description-2,
+  .girl-description-4 {
+    text-align: right;
+  }
+}
