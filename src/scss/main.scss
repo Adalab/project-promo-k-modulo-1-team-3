@@ -115,7 +115,7 @@ body {
 @import "./layout/aboutus";
 
 /* ADALABERS */
-@import "layout/adalabers.scss";
+@import "./layout/adalabers.scss";
 
 // .adalabers-container {
 //   width: 100%;
@@ -180,83 +180,11 @@ body {
 // }
 
 /* FOOTER */
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px solid #b8b8b9;
-  padding-top: 30px;
-  padding-bottom: 45px;
-  position: relative;
-}
-
-.logo-menu {
-  display: flex;
-  flex-direction: column;
-}
-.logo-container {
-  order: 2;
-}
-
-.footer__copy2020 {
-  height: 20px;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  color: #b8b8b9;
-}
-.footer__footerMenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  list-style-type: none;
-  text-transform: uppercase;
-  width: 114px;
-  height: 60px;
-  opacity: 0.75;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
-  color: #54585a;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.team-1,
-.team-1:visited,
-.aboutus-1,
-.aboutus-1:visited,
-.contact-1,
-.contact-1:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-.footerLogo__logo {
-  width: 115.9px;
-  height: 45px;
-}
-
-/* ------------------------MEDIA QUERIES----------------------
-/*------------------------BREAKPOINT PARA TABLET----------------------*/
-
+@import "./layout/footer.scss";
+//   /* ------------------------MEDIA QUERIES----------------------
+// /*------------------------BREAKPOINT PARA TABLET----------------------*/
+// /* ------------------------HEADER SECTION -STARTS----------------------*/
 @media all and (min-width: 768px) {
-  /* ------------------------HEADER SECTION -STARTS----------------------*/
-
   .header {
     display: flex;
     flex-direction: row;
@@ -344,74 +272,21 @@ footer {
   .girl-description-4 {
     text-align: right;
   }
-  /*---------------ADALABERS SECTION - END---------------*/
+}
+/*------------------------BREAKPOINT PARA DESKTOP----------------------*/
 
-  /*---------------FOOTER SECTION - START----------------*/
-  footer {
-    position: relative;
-    align-items: start;
-    padding: 0 0 60px 0;
+@media all and (min-width: 1200px) {
+  /* ------------HEADER SECTION START ------------ */
+  .header {
+    padding: 0 138px 0 138px;
   }
 
-  .nav-footer {
-    position: absolute;
-    top: 0;
-    right: 0;
+  .menu {
+    width: 50%;
   }
 
-  .footer__footerMenu {
-    padding: 25px 45px 0 0;
-    margin-top: 16px;
+  .motto {
+    margin: 0 138px 0 138px;
+    top: -60px;
   }
-
-  .footer__copy2020 {
-    padding: 30px 0 0 45px;
-  }
-
-  .footerLogo__logo {
-    padding: 15px 0 0 45px;
-  }
-  .footer__footerMenu li {
-    display: block;
-    padding: 8px 0;
-  }
-  /*------------FOOTER SECTION -ENDS-------------  */
-
-  /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
-
-  @media all and (min-width: 1200px) {
-    /* ------------HEADER SECTION START ------------ */
-    .header {
-      padding: 0 138px 0 138px;
-    }
-
-    .menu {
-      width: 50%;
-    }
-
-    .motto {
-      margin: 0 138px 0 138px;
-      top: -60px;
-    }
-
-    /* ------------ABOUT US SECTION - START ------------ */
-
-    /*---------------ADALABERS SECTION - START---------------*/
-
-    /*---------------ADALABERS SECTION - ENDS---------------*/
-
-    /* ----------FOOTER SECTION - STARTS----------- */
-    .footer__footerMenu {
-      padding: 25px 138px 0 0;
-    }
-
-    .footer__copy2020 {
-      padding: 30px 0 0 138px;
-    }
-
-    .footerLogo__logo {
-      padding: 15px 0 0 138px;
-    }
-  }
-  /* ----------FOOTER SECTION - ENDS----------- */
 }
