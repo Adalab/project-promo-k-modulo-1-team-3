@@ -18,6 +18,7 @@
 .adalabers__adalabersContainer--even {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .adalabersContainer__girlImage {
@@ -27,7 +28,7 @@
   border: solid 5px #b8b8b9;
   border-radius: 2%;
 }
-.gadalabersContainer__girlText {
+.adalabersContainer__girlText {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +44,7 @@
   font-family: Open Sans;
 }
 
-.dalabersContainer__girlDescription {
+.adalabersContainer__girlDescription {
   color: #54585a;
   font-size: 16px;
   text-align: center;
@@ -62,10 +63,6 @@
     color: #099d8d;
   }
 }
-
-// .icon {
-//   color: #099d8d;
-// }
 
 .adalabersContainer__dot {
   color: #54585a;
