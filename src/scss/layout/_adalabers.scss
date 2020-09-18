@@ -50,6 +50,7 @@
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
 }
+
 .adalabersContainer__icons {
   display: flex;
   width: 25%;
@@ -57,7 +58,9 @@
   margin-bottom: 15px;
   font-size: 16px;
   justify-content: space-around;
-  color: #099d8d;
+  a {
+    color: #099d8d;
+  }
 }
 
 // .icon {
