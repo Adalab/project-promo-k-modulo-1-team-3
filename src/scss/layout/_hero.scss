@@ -1,0 +1,26 @@
+/* ESTILOS HERO */
+
+.hero__image {
+  width: 100vw;
+  margin-top: 60px;
+}
+
+/* LEMA HERO */
+.hero__motto {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  top: -30px;
+  background-color: white;
+}
+.hero__mottoText {
+  padding: 15px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}

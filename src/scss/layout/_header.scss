@@ -3,3 +3,80 @@
   justify-content: space-evenly;
   margin-bottom: 3rem;
 }
+/* ESTILOS HEADER */
+
+.header {
+  width: 100%;
+  height: 105px;
+  box-sizing: border-box;
+  position: fixed;
+  align-content: center;
+  text-transform: uppercase;
+  background: rgba(9, 157, 141, 0.95);
+  opacity: 95%;
+  z-index: 2;
+}
+/* NOMBRE EQUIPO */
+.header__headerName {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  opacity: 95%;
+}
+/* MENÚ */
+.header__teamName {
+  line-height: 30px;
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: white;
+  padding-top: 15px;
+}
+.header__menu {
+  display: block;
+  width: 100vw;
+  height: 45px;
+}
+.header__menuList {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  list-style: none;
+  background-color: #14d9c4;
+}
+/* LINKS MENÚ */
+.header__link--team,
+.header__link--aboutus,
+.header__link--contact {
+  line-height: 30px;
+  font-family: "rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: white;
+}
+.header__link--team {
+  width: 56px;
+  height: 30px;
+}
+.header__link--aboutus {
+  width: 121px;
+  height: 30px;
+}
+.header__link--contact {
+  width: 80px;
+  height: 30px;
+}
