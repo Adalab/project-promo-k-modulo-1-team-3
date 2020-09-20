@@ -5,8 +5,8 @@
   width: 100%;
   padding: 1rem;
 }
-//   color: $color-secondary;
-//
+// //   color: $color-secondary;
+// //
 
 footer {
   width: 100%;
@@ -18,7 +18,6 @@ footer {
   padding-bottom: 45px;
   position: relative;
   @media all and (min-width: 768px) {
-    position: relative;
     align-items: start;
     padding: 0 0 60px 0;
   }
@@ -92,7 +91,6 @@ footer {
   color: #54585a;
   padding-top: 20px;
   padding-bottom: 30px;
-  position: absolute;
   top: 0;
   right: 0;
   @media all and (min-width: 768px) {
