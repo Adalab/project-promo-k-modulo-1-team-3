@@ -116,7 +116,7 @@
   flex-direction: column;
   align-items: center;
   &__title {
-    color: #099d8d;
+    color: $color-tertiary;
     font-size: 24px;
     font-family: "Rubik";
     line-height: 45px;
@@ -150,7 +150,7 @@
     margin-top: 30px;
     margin-bottom: 15px;
     width: 180px;
-    border: solid 5px #b8b8b9;
+    border: solid 5px $color-secondary-light;
     border-radius: 2%;
     @media all and (min-width: 768px) {
       width: 205px;
@@ -194,10 +194,10 @@
     }
   }
   &__girlDescription {
-    color: #54585a;
+    color: $color-secondary;
     font-size: 16px;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-secondary, sans-serif;
     line-height: 24px;
     &--odd {
       @media all and (min-width: 768px) {
@@ -218,10 +218,10 @@
     font-size: 16px;
     justify-content: space-around;
     a {
-      color: #099d8d;
+      color: $color-tertiary;
     }
   }
   &__dot {
-    color: #54585a;
+    color: $color-secondary;
   }
 }
