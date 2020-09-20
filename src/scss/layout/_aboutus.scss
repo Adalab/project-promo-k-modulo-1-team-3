@@ -1,6 +1,6 @@
 .story,
-.strengths,
-.weaknesses,
+.aboutUS__strengths,
+.aboutUS__weaknesses,
 .adalabers {
   padding: 30px 15px 30px 15px;
 }
@@ -87,7 +87,7 @@
 }
 
 @media all and (min-width: 768px) {
-  .about-us-wrapper {
+  .aboutUS__wrapper {
     display: flex;
     flex-direction: row;
   }

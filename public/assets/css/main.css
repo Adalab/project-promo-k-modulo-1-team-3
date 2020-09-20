@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(./core/_variables.scss);
 * {
   padding: 0;
   margin: 0; }
@@ -109,23 +110,45 @@ body {
 
 /* ABOUT US */
 .story,
-.strengths,
-.weaknesses,
-.adalabers-container {
+.aboutUS__strengths,
+.aboutUS__weaknesses,
+.adalabers {
   padding: 30px 15px 30px 15px; }
 
 .story {
   margin-top: -66px;
   padding-top: 45px; }
+  @media all and (min-width: 768px) {
+    .story {
+      padding: 45px 45px 60px 45px; } }
+  @media all and (min-width: 1200px) {
+    .story {
+      padding: 45px 300px 60px 300px; } }
 
-.strengths {
+.aboutUS__strengths {
   padding-top: 0;
   padding-bottom: 0; }
+  @media all and (min-width: 768px) {
+    .aboutUS__strengths {
+      padding: 15px 15px 60px 45px;
+      margin-top: -30px;
+      flex: 1; } }
+  @media all and (min-width: 1200px) {
+    .aboutUS__strengths {
+      padding: 15px 30px 60px 138px; } }
 
-.weaknesses {
+.aboutUS__weaknesses {
   padding-bottom: 45px; }
+  @media all and (min-width: 768px) {
+    .aboutUS__weaknesses {
+      padding: 15px 45px 60px 15px;
+      margin-top: -30px;
+      flex: 1; } }
+  @media all and (min-width: 1200px) {
+    .aboutUS__weaknesses {
+      padding: 15px 138px 60px 30px; } }
 
-.triangle-down {
+.aboutUS__triangleDown {
   width: 0;
   height: 0;
   border-left: 31px solid transparent;
@@ -133,10 +156,13 @@ body {
   border-top: 31px solid white;
   margin: -1px auto; }
 
-.about-us-container {
+.aboutUS {
   background-color: #b8b8b9; }
+  @media all and (min-width: 1200px) {
+    .aboutUS {
+      margin: auto 138px; } }
 
-.title {
+.story__title {
   font-family: "Rubik";
   letter-spacing: normal;
   font-stretch: normal;
@@ -146,20 +172,25 @@ body {
   padding-bottom: 15px;
   font-weight: 500; }
 
-.text1,
-.text2,
-.text3 {
+.story__text,
+.aboutUS__strengths--text,
+.aboutUS__weaknesses--text {
   font-family: "Open Sans";
   text-align: center; }
 
-.title1 {
+.story__text {
   font-size: 24px;
   color: #14d9c4; }
 
-.title2,
-.title3 {
+.aboutUS__strengths--text,
+.aboutUS__weaknesses--text {
   color: #099d8d;
   font-size: 22px; }
+
+@media all and (min-width: 768px) {
+  .aboutUS__wrapper {
+    display: flex;
+    flex-direction: row; } }
 
 /* ADALABERS */
 /*.adalabers {
@@ -368,6 +399,13 @@ body {
   color: #54585a; }
 
 /* FOOTER */
+.page__footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem; }
+
 footer {
   width: 100%;
   display: flex;
@@ -375,9 +413,35 @@ footer {
   align-items: center;
   border-top: 1px solid #b8b8b9;
   padding-top: 30px;
-  padding-bottom: 45px; }
+  padding-bottom: 45px;
+  position: relative; }
+  @media all and (min-width: 768px) {
+    footer {
+      align-items: start;
+      padding: 0 0 60px 0; } }
 
-.copy2020 {
+.footer_footerMenu_nav .footerMenu_link--team,
+.footer_footerMenu_nav .footerMenu_link--team:visited,
+.footer_footerMenu_nav .footerMenu_link--aboutUs,
+.footer_footerMenu_nav .footerMenu_link--aboutUs:visited,
+.footer_footerMenu_nav .footerMenu_link--contact,
+.footer_footerMenu_nav .footerMenu_link--contact:visited {
+  color: inherit;
+  text-decoration: none; }
+
+.footerLogo__logo {
+  display: flex;
+  flex-direction: column; }
+  @media all and (min-width: 768px) {
+    .footerLogo__logo .footerLogo__logo {
+      padding: 15px 0 0 45px;
+      width: 115.9px;
+      height: 45px; } }
+  @media all and (min-width: 1200px) {
+    .footerLogo__logo .footerLogo__logo {
+      padding: 15px 0 0 138px; } }
+
+.footer__copy2020 {
   height: 20px;
   font-family: "Open Sans";
   font-size: 14px;
@@ -387,8 +451,14 @@ footer {
   line-height: 1.43;
   letter-spacing: normal;
   color: #b8b8b9; }
+  @media all and (min-width: 768px) {
+    .footer__copy2020 .footer__copy2020 {
+      padding: 30px 0 0 45px; } }
+  @media all and (min-width: 1200px) {
+    .footer__copy2020 .footer__copy2020 {
+      padding: 30px 0 0 138px; } }
 
-.menu-footer {
+.footer__footerMenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -408,25 +478,27 @@ footer {
   text-align: center;
   color: #54585a;
   padding-top: 20px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  top: 0;
+  right: 0; }
+  @media all and (min-width: 768px) {
+    .footer__footerMenu {
+      order: 2;
+      padding: 25px 45px 0 0;
+      margin-top: 16px;
+      display: block;
+      padding: 8px 0; } }
+  @media all and (min-width: 1200) {
+    .footer__footerMenu .footer__footerMenu {
+      padding: 25px 138px 0 0; } }
 
-.team-1,
-.team-1:visited,
-.aboutus-1,
-.aboutus-1:visited,
-.contact-1,
-.contact-1:visited {
-  color: inherit;
-  text-decoration: none; }
-
-.logo {
-  width: 115.9px;
-  height: 45px; }
-
-/* ------------------------MEDIA QUERIES----------------------
-/*------------------------BREAKPOINT PARA TABLET----------------------*/
 @media all and (min-width: 768px) {
-  /* ------------------------HEADER SECTION -STARTS----------------------*/
+  .footer_footerMenu_nav {
+    position: absolute;
+    top: 0;
+    right: 0; } }
+
+@media all and (min-width: 768px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -448,19 +520,6 @@ footer {
     margin: 0 115px 0 115px;
     top: -40px; }
   /* ------------------------HERO SECTION -ENDS----------------------*/
-  .story {
-    padding: 45px 45px 60px 45px; }
-  .about-us-wrapper {
-    display: flex;
-    flex-direction: row; }
-  .strengths {
-    padding: 15px 15px 60px 45px;
-    margin-top: -30px;
-    flex: 1; }
-  .weaknesses {
-    padding: 15px 45px 60px 15px;
-    margin-top: -30px;
-    flex: 1; }
   /* ----------ABOUT US SECTION- ENDS------------ */
   /*---------------ADALABERS SECTION -START---------------*/
   .who-we-are-h1 {
@@ -498,31 +557,10 @@ footer {
     text-align: left; }
   .girl-description-2,
   .girl-description-4 {
-    text-align: right; }
-  /*---------------ADALABERS SECTION - END---------------*/
-  /*---------------FOOTER SECTION - START----------------*/
-  footer {
-    position: relative;
-    align-items: start;
-    padding: 0 0 60px 0; }
-  .nav-footer {
-    position: absolute;
-    top: 0;
-    right: 0; }
-  .menu-footer {
-    padding: 25px 45px 0 0;
-    margin-top: 16px; }
-  .copy2020 {
-    padding: 30px 0 0 45px; }
-  .logo {
-    padding: 15px 0 0 45px; }
-  .menu-footer li {
-    display: block;
-    padding: 8px 0; }
-  /*------------FOOTER SECTION -ENDS-------------  */
-  /*------------------------BREAKPOINT PARA DESKTOP----------------------*/ }
+    text-align: right; } }
 
-@media all and (min-width: 768px) and (min-width: 1200px) {
+/*------------------------BREAKPOINT PARA DESKTOP----------------------*/
+@media all and (min-width: 1200px) {
   /* ------------HEADER SECTION START ------------ */
   .header {
     padding: 0 138px 0 138px; }
@@ -530,27 +568,6 @@ footer {
     width: 50%; }
   .motto {
     margin: 0 138px 0 138px;
-    top: -60px; }
-  /* ------------ABOUT US SECTION - START ------------ */
-  .story {
-    padding: 45px 300px 60px 300px; }
-  .about-us-container {
-    margin: auto 138px; }
-  .strengths {
-    padding: 15px 30px 60px 138px; }
-  .weaknesses {
-    padding: 15px 138px 60px 30px; }
-  /*---------------ADALABERS SECTION - START---------------*/
-  /*---------------ADALABERS SECTION - ENDS---------------*/
-  /* ----------FOOTER SECTION - STARTS----------- */
-  .menu-footer {
-    padding: 25px 138px 0 0; }
-  .copy2020 {
-    padding: 30px 0 0 138px; }
-  .logo {
-    padding: 15px 0 0 138px; } }
-
-@media all and (min-width: 768px) {
-  /* ----------FOOTER SECTION - ENDS----------- */ }
+    top: -60px; } }
 
 /*# sourceMappingURL=main.css.map */
