@@ -1,11 +1,3 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
-}
 footer {
   width: 100%;
   display: flex;
@@ -15,6 +7,16 @@ footer {
   padding-top: 30px;
   padding-bottom: 45px;
   position: relative;
+  .footerMenu_link--team,
+  .footerMenu_link--team:visited,
+  .footerMenu_link--aboutUs,
+  .footerMenu_link--aboutUs:visited,
+  .footerMenu_link--contact,
+  .footerMenu_link--contact:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
   @media all and (min-width: 768px) {
     position: relative;
     align-items: start;
@@ -26,7 +28,6 @@ footer {
   flex-direction: column;
   @media all and (min-width: 768px) {
     .footerLogo__logo {
-      order: 2;
       padding: 15px 0 0 45px;
       width: 115.9px;
       height: 45px;
@@ -84,12 +85,11 @@ footer {
   top: 0;
   right: 0;
   @media all and (min-width: 768px) {
+    order: 2;
     padding: 25px 45px 0 0;
     margin-top: 16px;
-    .footer__footerMenu {
-      display: block;
-      padding: 8px 0;
-    }
+    display: block;
+    padding: 8px 0;
   }
   @media all and (min-width: 1200) {
     .footer__footerMenu {
@@ -98,18 +98,9 @@ footer {
   }
 }
 @media all and (min-width: 768px) {
-  .nav-footer {
+  .footer_footerMenu_nav {
     position: absolute;
     top: 0;
     right: 0;
   }
-}
-.team-1,
-.team-1:visited,
-.aboutus-1,
-.aboutus-1:visited,
-.contact-1,
-.contact-1:visited {
-  color: inherit;
-  text-decoration: none;
 }
