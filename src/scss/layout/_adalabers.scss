@@ -1,5 +1,4 @@
-/* ADALABERS */
-.adalabers {
+/*.adalabers {
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -12,6 +11,9 @@
   font-size: 24px;
   font-family: "Rubik";
   line-height: 45px;
+  @media all and (min-width: 768px) {
+    margin-top: 45px;
+  }
 }
 
 .adalabers__adalabersContainer--odd,
@@ -19,6 +21,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 25px 60px 25px;
+  }
 }
 .adalabersContainer__girlImage {
   margin-top: 30px;
@@ -26,14 +34,20 @@
   width: 180px;
   border: solid 5px #b8b8b9;
   border-radius: 2%;
+  @media all and (min-width: 768px) {
+    width: 205px;
+  }
 }
-.gadalabersContainer__girlText {
+.adalabersContainer__girlText {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 25px;
+  @media all and (min-width: 768px) {
+    width: 439px;
+  }
 }
-.adalabersContainer_girlName {
+.adalabersContainer__girlName {
   color: #000000;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -41,9 +55,12 @@
   font-weight: bold;
   text-align: center;
   font-family: Open Sans;
+  @media all and (min-width: 768px) {
+    margin-top: 0px;
+  }
 }
 
-.dalabersContainer__girlDescription {
+.adalabersContainer__girlDescription {
   color: #54585a;
   font-size: 16px;
   text-align: center;
@@ -63,68 +80,148 @@
   }
 }
 
-// .icon {
-//   color: #099d8d;
-// }
-
 .adalabersContainer__dot {
   color: #54585a;
 }
 
 // --------------MEDIA QUERY 768------------------
 @media all and (min-width: 768px) {
-  .adalabers__title {
-    margin-top: 45px;
-    line-height: 45px;
-  }
-  .adalabers__adalabersContainer--odd,
-  .adalabers__adalabersContainer--even {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0 25px 60px 25px;
+  .adalabers__adalabersContainer--odd {
+    .adalabersContainer__girlText {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px 20px 20px 20px;
+      margin-top: 30px;
+    }
+    .adalabersContainer__girlDescription {
+      text-align: left;
+    }
   }
 
   .adalabers__adalabersContainer--even {
     flex-direction: row-reverse;
-  }
-
-  .adalabersContainer__girlImage {
-    width: 205px;
-  }
-
-  .adalabersContainer__girlText {
-    width: 439px;
-  }
-
-  .adalabersContainer__girlName {
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-    // FALTA ESTAN ESTOS MARCADORES POR REEMPLAZAR CON LOS DE BEM -- Creo que se podría probar anidando: adalabersContainer__girlText que estén dentro de adalabers__adalabersContainer--odd o even, según corresponda
-    .girl-text-1,
-    .girl-text-3,
-    .girl-text-5 {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-      margin-top: 20px;
-    }
-
-    .girl-text-2,
-    .girl-text-4 {
+    .adalabersContainer__girlText {
       align-items: flex-end;
     }
+    .adalabersContainer__girlDescription {
+      text-align: right;
+    }
   }
-  .girl-description-1,
-  .girl-description-3,
-  .girl-description-5 {
-    text-align: left;
+}*/
+.adalabers {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    color: #099d8d;
+    font-size: 24px;
+    font-family: "Rubik";
+    line-height: 45px;
+    margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+      margin-top: 45px;
+      margin-bottom: 45px; /*esto lo he metido nuevo*/
+    }
   }
 
-  .girl-description-2,
-  .girl-description-4 {
-    text-align: right;
+  &__adalabersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // He metido estas tres líneas de arriba porque no estaba dándole el formato flex al de móvil.
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0 25px 60px 25px;
+    }
+    &--even {
+      @media all and (min-width: 768px) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+.adalabersContainer {
+  &__girlImage {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 180px;
+    border: solid 5px #b8b8b9;
+    border-radius: 2%;
+    @media all and (min-width: 768px) {
+      width: 205px;
+    }
+  }
+  &__girlText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    @media all and (min-width: 768px) {
+      /*width: 439px;*/
+      // padding: 0px 20px 20px 30px;
+    }
+    &--odd {
+      @media all and (min-width: 768px) {
+        // display: flex;
+        // flex-direction: column;
+        align-items: flex-start;
+        // padding: 0px 30px 20px 20px;
+      }
+    }
+    &--even {
+      @media all and (min-width: 768px) {
+        // display: flex;
+        // flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  }
+  &__girlName {
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Open Sans;
+    @media all and (min-width: 768px) {
+      margin-top: 0px;
+    }
+  }
+  &__girlDescription {
+    color: #54585a;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+    &--odd {
+      @media all and (min-width: 768px) {
+        text-align: left;
+      }
+    }
+    &--even {
+      @media all and (min-width: 768px) {
+        text-align: right;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    width: 25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    justify-content: space-around;
+    a {
+      color: #099d8d;
+    }
+  }
+  &__dot {
+    color: #54585a;
   }
 }
