@@ -4,7 +4,6 @@
 .adalabers {
   padding: 30px 15px 30px 15px;
 }
-
 .story {
   margin-top: -66px;
   padding-top: 45px;
@@ -15,7 +14,6 @@
     padding: 45px 300px 60px 300px;
   }
 }
-
 .aboutUS__strengths,
 .aboutUS__weaknesses {
   padding: 0 30;
@@ -41,9 +39,7 @@
     padding: 15px 30px 60px 138px;
   }
 }
-
 // -----------He unificado estos dos selectores (arriba) para ahorrar código, y he metido dentro el title, que no estaba.-----------------
-
 //  {
 //   padding-bottom: 45px;
 //   &--title {
@@ -65,7 +61,6 @@
 //     padding: 15px 138px 60px 30px;
 //   }
 // }
-
 .aboutUS__triangleDown {
   width: 0;
   height: 0;
@@ -74,14 +69,12 @@
   border-top: 31px solid $color-white;
   margin: -1px auto;
 }
-
 .aboutUS {
   background-color: $color-secondary-light;
   @media all and (min-width: 1200px) {
     margin: auto 138px;
   }
 }
-
 .story__title {
   font-family: $font-main;
   letter-spacing: normal;
@@ -92,25 +85,21 @@
   padding-bottom: 15px;
   font-weight: 500;
 }
-
 .story__text,
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
   font-family: $font-secondary;
   text-align: center;
 }
-
 .story__text {
   font-size: 24px;
   color: $color-secondary;
 }
-
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
   color: $color-secondary;
   font-size: 22px;
 }
-
 @media all and (min-width: 768px) {
   .aboutUS__wrapper {
     display: flex;
