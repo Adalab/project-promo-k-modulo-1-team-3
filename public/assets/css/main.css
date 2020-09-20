@@ -125,35 +125,39 @@ body {
     .story {
       padding: 45px 300px 60px 300px; } }
 
-.aboutUS__strengths {
-  padding-top: 0;
-  padding-bottom: 0; }
+.aboutUS__strengths,
+.aboutUS__weaknesses {
+  padding: 0 30; }
+  .aboutUS__strengths--title,
+  .aboutUS__weaknesses--title {
+    font-family: "Rubik";
+    font-size: 22px;
+    color: #099d8d;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 45px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-weight: 500; }
   @media all and (min-width: 768px) {
-    .aboutUS__strengths {
+    .aboutUS__strengths,
+    .aboutUS__weaknesses {
       padding: 15px 15px 60px 45px;
       margin-top: -30px;
       flex: 1; } }
   @media all and (min-width: 1200px) {
-    .aboutUS__strengths {
+    .aboutUS__strengths,
+    .aboutUS__weaknesses {
       padding: 15px 30px 60px 138px; } }
-
-.aboutUS__weaknesses {
-  padding-bottom: 45px; }
-  @media all and (min-width: 768px) {
-    .aboutUS__weaknesses {
-      padding: 15px 45px 60px 15px;
-      margin-top: -30px;
-      flex: 1; } }
-  @media all and (min-width: 1200px) {
-    .aboutUS__weaknesses {
-      padding: 15px 138px 60px 30px; } }
 
 .aboutUS__triangleDown {
   width: 0;
   height: 0;
   border-left: 31px solid transparent;
   border-right: 31px solid transparent;
-  border-top: 31px solid white;
+  border-top: 31px solid #ffffff;
   margin: -1px auto; }
 
 .aboutUS {
@@ -367,7 +371,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  font-family: Open Sans; }
+  font-family: "Open Sans"; }
   @media all and (min-width: 768px) {
     .adalabersContainer__girlName {
       margin-top: 0px; } }
