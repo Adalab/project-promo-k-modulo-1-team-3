@@ -5,8 +5,8 @@
   width: 100%;
   padding: 1rem;
 }
-// //   color: $color-secondary;
-// //
+//   color: $color-secondary;
+//  /*esta variable me da error*/
 
 footer {
   width: 100%;
@@ -100,16 +100,16 @@ footer {
     display: block;
     padding: 8px 0;
   }
-  @media all and (min-width: 1200) {
-    .footer__footerMenu {
-      padding: 25px 138px 0 0;
-    }
-  }
 }
 @media all and (min-width: 768px) {
   .footer_footerMenu_nav {
     position: absolute;
     top: 0;
     right: 0;
+  }
+}
+@media all and (min-width: 1200) {
+  .footer__footerMenu {
+    padding: 25px 138px 0 0;
   }
 }
