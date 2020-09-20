@@ -26,6 +26,7 @@ footer {
   flex-direction: column;
   @media all and (min-width: 768px) {
     .footerLogo__logo {
+      order: 2;
       padding: 15px 0 0 45px;
       width: 115.9px;
       height: 45px;
@@ -37,10 +38,6 @@ footer {
     }
   }
 }
-.logo-container {
-  order: 2;
-}
-
 .footer__copy2020 {
   height: 20px;
   font-family: "Open Sans";
@@ -89,7 +86,7 @@ footer {
   @media all and (min-width: 768px) {
     padding: 25px 45px 0 0;
     margin-top: 16px;
-    .footer__footerMenu li {
+    .footer__footerMenu {
       display: block;
       padding: 8px 0;
     }
@@ -100,7 +97,7 @@ footer {
     }
   }
 }
-@media all and (min-width: 168px) {
+@media all and (min-width: 768px) {
   .nav-footer {
     position: absolute;
     top: 0;
