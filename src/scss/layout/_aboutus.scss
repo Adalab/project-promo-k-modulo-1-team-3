@@ -1,85 +1,82 @@
 .story,
-.strengths,
-.weaknesses,
+.aboutUS__strengths,
+.aboutUS__weaknesses,
 .adalabers {
   padding: 30px 15px 30px 15px;
 }
-
 .story {
   margin-top: -66px;
   padding-top: 45px;
-}
-
-@media all and (min-width: 768px) {
-  .story {
+  @media all and (min-width: 768px) {
     padding: 45px 45px 60px 45px;
   }
-}
-
-@media all and (min-width: 1200px) {
-  .story {
+  @media all and (min-width: 1200px) {
     padding: 45px 300px 60px 300px;
   }
 }
-
-.aboutUS__strengths {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-@media all and (min-width: 768px) {
-  .aboutUs__strengths {
+.aboutUS__strengths,
+.aboutUS__weaknesses {
+  padding: 0 30;
+  &--title {
+    font-family: $font-main;
+    font-size: 22px;
+    color: $color-tertiary;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 45px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-weight: 500;
+  }
+  @media all and (min-width: 768px) {
     padding: 15px 15px 60px 45px;
     margin-top: -30px;
     flex: 1;
   }
-}
-
-@media all and (min-width: 1200px) {
-  .aboutUs__strengths {
+  @media all and (min-width: 1200px) {
     padding: 15px 30px 60px 138px;
   }
 }
-
-.aboutUS__weaknesses {
-  padding-bottom: 45px;
-}
-
-@media all and (min-width: 768px) {
-  .aboutUS__weaknesses {
-    padding: 15px 45px 60px 15px;
-    margin-top: -30px;
-    flex: 1;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .aboutUs__weaknesses {
-    padding: 15px 138px 60px 30px;
-  }
-}
-
+// -----------He unificado estos dos selectores (arriba) para ahorrar código, y he metido dentro el title, que no estaba.-----------------
+//  {
+//   padding-bottom: 45px;
+//   &--title {
+//     font-family: $font-main;
+//     letter-spacing: normal;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 45px;
+//     text-align: center;
+//     padding-bottom: 15px;
+//     font-weight: 500;
+//   }
+//   @media all and (min-width: 768px) {
+//     padding: 15px 45px 60px 15px;
+//     margin-top: -30px;
+//     flex: 1;
+//   }
+//   @media all and (min-width: 1200px) {
+//     padding: 15px 138px 60px 30px;
+//   }
+// }
 .aboutUS__triangleDown {
   width: 0;
   height: 0;
   border-left: 31px solid transparent;
   border-right: 31px solid transparent;
-  border-top: 31px solid white;
+  border-top: 31px solid $color-white;
   margin: -1px auto;
 }
-
 .aboutUS {
-  background-color: #b8b8b9;
-}
-
-@media all and (min-width: 1200px) {
-  .aboutUS {
+  background-color: $color-secondary-light;
+  @media all and (min-width: 1200px) {
     margin: auto 138px;
   }
 }
-
 .story__title {
-  font-family: "Rubik";
+  font-family: $font-main;
   letter-spacing: normal;
   font-stretch: normal;
   font-style: normal;
@@ -88,27 +85,23 @@
   padding-bottom: 15px;
   font-weight: 500;
 }
-
 .story__text,
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
-  font-family: "Open Sans";
+  font-family: $font-secondary;
   text-align: center;
 }
-
 .story__text {
   font-size: 24px;
-  color: #14d9c4;
+  color: $color-secondary;
 }
-
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
-  color: #099d8d;
+  color: $color-secondary;
   font-size: 22px;
 }
-
 @media all and (min-width: 768px) {
-  .about-us-wrapper {
+  .aboutUS__wrapper {
     display: flex;
     flex-direction: row;
   }
