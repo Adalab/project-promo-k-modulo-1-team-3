@@ -1,8 +1,12 @@
-* {
-  padding: 0;
-  margin: 0;
-  @import url(./core/_variables.scss);
-}
+// Core
+@import "core/reset";
+@import "core/variables";
+
+// * {
+//   padding: 0;
+//   margin: 0;
+//   @import url(./core/_variables.scss);
+// }
 
 body {
   width: 100%;
@@ -118,68 +122,6 @@ body {
 /* ADALABERS */
 @import "./layout/adalabers.scss";
 
-// .adalabers-container {
-//   width: 100%;
-//   box-sizing: border-box;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-// .who-we-are-h1 {
-//   color: #099d8d;
-//   font-size: 24px;
-//   font-family: "Rubik";
-//   line-height: 45px;
-// }
-// .girl-container {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-// .girl-image {
-//   margin-top: 30px;
-//   margin-bottom: 15px;
-//   width: 180px;
-//   border: solid 5px #b8b8b9;
-//   border-radius: 2%;
-// }
-// .girl-text {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 25px;
-// }
-// .girl-name {
-//   color: #000000;
-//   margin-top: 5px;
-//   margin-bottom: 5px;
-//   font-size: 20px;
-//   font-weight: bold;
-//   text-align: center;
-//   font-family: Open Sans;
-// }
-// .girl-description {
-//   color: #54585a;
-//   font-size: 16px;
-//   text-align: center;
-//   font-family: "Open Sans", sans-serif;
-//   line-height: 24px;
-// }
-// .icons {
-//   display: flex;
-//   width: 25%;
-//   margin-top: 15px;
-//   margin-bottom: 15px;
-//   font-size: 16px;
-//   justify-content: space-around;
-// }
-// .icon {
-//   color: #099d8d;
-// }
-// .dot {
-//   color: #54585a;
-// }
-
 /* FOOTER */
 @import "./layout/footer.scss";
 //   /* ------------------------MEDIA QUERIES----------------------
@@ -221,58 +163,58 @@ body {
   /* ----------ABOUT US SECTION- ENDS------------ */
   /*---------------ADALABERS SECTION -START---------------*/
 
-  .who-we-are-h1 {
-    margin-top: 45px;
-    line-height: 45px;
-  }
-  .girl-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0 25px 60px 25px;
-  }
+  // .who-we-are-h1 {
+  //   margin-top: 45px;
+  //   line-height: 45px;
+  // }
+  // .girl-container {
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: flex-start;
+  //   margin: 0 25px 60px 25px;
+  // }
 
-  .girl-2,
-  .girl-4 {
-    flex-direction: row-reverse;
-  }
-  .girl-image {
-    width: 205px;
-  }
+  // .girl-2,
+  // .girl-4 {
+  //   flex-direction: row-reverse;
+  // }
+  // .girl-image {
+  //   width: 205px;
+  // }
 
-  .girl-text {
-    width: 439px;
-  }
+  // .girl-text {
+  //   width: 439px;
+  // }
 
-  .girl-text-1,
-  .girl-text-3,
-  .girl-text-5 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    margin-top: 20px;
-  }
+  // .girl-text-1,
+  // .girl-text-3,
+  // .girl-text-5 {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   padding: 20px;
+  //   margin-top: 20px;
+  // }
 
-  .girl-text-2,
-  .girl-text-4 {
-    align-items: flex-end;
-  }
+  // .girl-text-2,
+  // .girl-text-4 {
+  //   align-items: flex-end;
+  // }
 
-  .girl-name {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .girl-description-1,
-  .girl-description-3,
-  .girl-description-5 {
-    text-align: left;
-  }
+  // .girl-name {
+  //   margin-top: 5px;
+  //   margin-bottom: 5px;
+  // }
+  // .girl-description-1,
+  // .girl-description-3,
+  // .girl-description-5 {
+  //   text-align: left;
+  // }
 
-  .girl-description-2,
-  .girl-description-4 {
-    text-align: right;
-  }
+  // .girl-description-2,
+  // .girl-description-4 {
+  //   text-align: right;
+  // }
 }
 /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
 

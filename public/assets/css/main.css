@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url(./core/_variables.scss);
 * {
-  padding: 0;
-  margin: 0; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 body {
   width: 100%;
@@ -180,11 +180,11 @@ body {
 
 .story__text {
   font-size: 24px;
-  color: #14d9c4; }
+  color: #54585a; }
 
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
-  color: #099d8d;
+  color: #54585a;
   font-size: 22px; }
 
 @media all and (min-width: 768px) {
@@ -521,43 +521,7 @@ footer {
     top: -40px; }
   /* ------------------------HERO SECTION -ENDS----------------------*/
   /* ----------ABOUT US SECTION- ENDS------------ */
-  /*---------------ADALABERS SECTION -START---------------*/
-  .who-we-are-h1 {
-    margin-top: 45px;
-    line-height: 45px; }
-  .girl-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0 25px 60px 25px; }
-  .girl-2,
-  .girl-4 {
-    flex-direction: row-reverse; }
-  .girl-image {
-    width: 205px; }
-  .girl-text {
-    width: 439px; }
-  .girl-text-1,
-  .girl-text-3,
-  .girl-text-5 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    margin-top: 20px; }
-  .girl-text-2,
-  .girl-text-4 {
-    align-items: flex-end; }
-  .girl-name {
-    margin-top: 5px;
-    margin-bottom: 5px; }
-  .girl-description-1,
-  .girl-description-3,
-  .girl-description-5 {
-    text-align: left; }
-  .girl-description-2,
-  .girl-description-4 {
-    text-align: right; } }
+  /*---------------ADALABERS SECTION -START---------------*/ }
 
 /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
 @media all and (min-width: 1200px) {
