@@ -131,108 +131,110 @@ body {
 //   /* ------------------------MEDIA QUERIES----------------------
 // /*------------------------BREAKPOINT PARA TABLET----------------------*/
 // /* ------------------------HEADER SECTION -STARTS----------------------*/
-@media all and (min-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    align-items: center;
-    padding: 0 45px 0 45px;
-  }
+// @media all and (min-width: 768px) {
+//   .header {
+//     display: flex;
+//     flex-direction: row;
+//     height: 60px;
+//     align-items: center;
+//     padding: 0 45px 0 45px;
+//   }
 
-  .headername {
-    text-align: left;
-  }
+//   .header__headerName {
+//     text-align: left;
+//   }
 
-  .menu {
-    height: auto;
-    width: 80%;
-  }
-  .headermenu {
-    padding: 0;
-    justify-content: space-between;
-  }
+//   .header__menu {
+//     height: auto;
+//     width: 80%;
+//     background-color: none;
+//   }
+//   .header__menuList {
+//     padding: 0;
+//     justify-content: space-between;
+//     background-color: ;
+//   }
 
-  /* ------------------------HEADER SECTION -ENDS----------------------*/
-  /* ------------------------HERO SECTION -BEGINS----------------------*/
+/* ------------------------HEADER SECTION -ENDS----------------------*/
+/* ------------------------HERO SECTION -BEGINS----------------------*/
 
-  .motto {
-    margin: 0 115px 0 115px;
-    top: -40px;
-  }
+// .motto {
+//   margin: 0 115px 0 115px;
+//   top: -40px;
+// }
 
-  /* ------------------------HERO SECTION -ENDS----------------------*/
+/* ------------------------HERO SECTION -ENDS----------------------*/
 
-  /* ----------ABOUT US SECTION- ENDS------------ */
-  /*---------------ADALABERS SECTION -START---------------*/
+/* ----------ABOUT US SECTION- ENDS------------ */
+/*---------------ADALABERS SECTION -START---------------*/
 
-  // .who-we-are-h1 {
-  //   margin-top: 45px;
-  //   line-height: 45px;
-  // }
-  // .girl-container {
-  //   display: flex;
-  //   flex-direction: row;
-  //   align-items: flex-start;
-  //   margin: 0 25px 60px 25px;
-  // }
+// .who-we-are-h1 {
+//   margin-top: 45px;
+//   line-height: 45px;
+// }
+// .girl-container {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+//   margin: 0 25px 60px 25px;
+// }
 
-  // .girl-2,
-  // .girl-4 {
-  //   flex-direction: row-reverse;
-  // }
-  // .girl-image {
-  //   width: 205px;
-  // }
+// .girl-2,
+// .girl-4 {
+//   flex-direction: row-reverse;
+// }
+// .girl-image {
+//   width: 205px;
+// }
 
-  // .girl-text {
-  //   width: 439px;
-  // }
+// .girl-text {
+//   width: 439px;
+// }
 
-  // .girl-text-1,
-  // .girl-text-3,
-  // .girl-text-5 {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  //   padding: 20px;
-  //   margin-top: 20px;
-  // }
+// .girl-text-1,
+// .girl-text-3,
+// .girl-text-5 {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   padding: 20px;
+//   margin-top: 20px;
+// }
 
-  // .girl-text-2,
-  // .girl-text-4 {
-  //   align-items: flex-end;
-  // }
+// .girl-text-2,
+// .girl-text-4 {
+//   align-items: flex-end;
+// }
 
-  // .girl-name {
-  //   margin-top: 5px;
-  //   margin-bottom: 5px;
-  // }
-  // .girl-description-1,
-  // .girl-description-3,
-  // .girl-description-5 {
-  //   text-align: left;
-  // }
+// .girl-name {
+//   margin-top: 5px;
+//   margin-bottom: 5px;
+// }
+// .girl-description-1,
+// .girl-description-3,
+// .girl-description-5 {
+//   text-align: left;
+// }
 
-  // .girl-description-2,
-  // .girl-description-4 {
-  //   text-align: right;
-  // }
-}
+// .girl-description-2,
+// .girl-description-4 {
+//   text-align: right;
+// }
+// }
 /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
 
-@media all and (min-width: 1200px) {
-  /* ------------HEADER SECTION START ------------ */
-  .header {
-    padding: 0 138px 0 138px;
-  }
+// @media all and (min-width: 1200px) {
+/* ------------HEADER SECTION START ------------ */
+//   .header {
+//     padding: 0 138px 0 138px;
+//   }
 
-  .menu {
-    width: 50%;
-  }
+//   .menu {
+//     width: 50%;
+//   }
 
-  .motto {
-    margin: 0 138px 0 138px;
-    top: -60px;
-  }
-}
+//   .motto {
+//     margin: 0 138px 0 138px;
+//     top: -60px;
+//   }
+// }

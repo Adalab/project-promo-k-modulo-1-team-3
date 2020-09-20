@@ -12,9 +12,19 @@
   position: fixed;
   align-content: center;
   text-transform: uppercase;
-  background: rgba(9, 157, 141, 0.95);
+  background: $color-tertiary;
   opacity: 95%;
   z-index: 2;
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    padding: 0 45px 0 45px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 0 138px 0 138px;
+  }
 }
 /* NOMBRE EQUIPO */
 .header__headerName {
@@ -22,23 +32,35 @@
   height: 60px;
   text-align: center;
   opacity: 95%;
+  @media all and (min-width: 768px) {
+    text-align: left;
+  }
 }
 /* MENÚ */
 .header__teamName {
   line-height: 30px;
-  font-family: "rubik", sans-serif;
+  font-family: $font-main;
   font-size: 16px;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
-  color: white;
+  color: $color-white;
   padding-top: 15px;
 }
+
 .header__menu {
   display: block;
   width: 100vw;
   height: 45px;
+  @media all and (min-width: 768px) {
+    height: auto;
+    width: 80%;
+    background: none;
+  }
+  @media all and (min-width: 1200px) {
+    width: 50%;
+  }
 }
 .header__menuList {
   display: flex;
@@ -51,14 +73,19 @@
   padding-top: 8px;
   padding-bottom: 7px;
   list-style: none;
-  background-color: #14d9c4;
+  background-color: $color-tertiary-light;
+  @media all and (min-width: 768px) {
+    padding: 0;
+    justify-content: space-between;
+    background: none;
+  }
 }
 /* LINKS MENÚ */
 .header__link--team,
 .header__link--aboutus,
 .header__link--contact {
   line-height: 30px;
-  font-family: "rubik", sans-serif;
+  font-family: $font-main;
   font-size: 15px;
   font-weight: 500;
   font-stretch: normal;
@@ -66,7 +93,7 @@
   line-height: 2;
   letter-spacing: normal;
   text-decoration: none;
-  color: white;
+  color: $color-white;
 }
 .header__link--team {
   width: 56px;
