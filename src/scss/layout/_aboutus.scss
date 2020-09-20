@@ -16,9 +16,22 @@
   }
 }
 
-.aboutUS__strengths {
-  padding-top: 0;
-  padding-bottom: 0;
+.aboutUS__strengths,
+.aboutUS__weaknesses {
+  padding: 0 30;
+  &--title {
+    font-family: $font-main;
+    font-size: 22px;
+    color: $color-tertiary;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 45px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-weight: 500;
+  }
   @media all and (min-width: 768px) {
     padding: 15px 15px 60px 45px;
     margin-top: -30px;
@@ -29,36 +42,48 @@
   }
 }
 
-.aboutUS__weaknesses {
-  padding-bottom: 45px;
-  @media all and (min-width: 768px) {
-    padding: 15px 45px 60px 15px;
-    margin-top: -30px;
-    flex: 1;
-  }
-  @media all and (min-width: 1200px) {
-    padding: 15px 138px 60px 30px;
-  }
-}
+// -----------He unificado estos dos selectores (arriba) para ahorrar código, y he metido dentro el title, que no estaba.-----------------
+
+//  {
+//   padding-bottom: 45px;
+//   &--title {
+//     font-family: $font-main;
+//     letter-spacing: normal;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 45px;
+//     text-align: center;
+//     padding-bottom: 15px;
+//     font-weight: 500;
+//   }
+//   @media all and (min-width: 768px) {
+//     padding: 15px 45px 60px 15px;
+//     margin-top: -30px;
+//     flex: 1;
+//   }
+//   @media all and (min-width: 1200px) {
+//     padding: 15px 138px 60px 30px;
+//   }
+// }
 
 .aboutUS__triangleDown {
   width: 0;
   height: 0;
   border-left: 31px solid transparent;
   border-right: 31px solid transparent;
-  border-top: 31px solid white;
+  border-top: 31px solid $color-white;
   margin: -1px auto;
 }
 
 .aboutUS {
-  background-color: #b8b8b9;
+  background-color: $color-secondary-light;
   @media all and (min-width: 1200px) {
     margin: auto 138px;
   }
 }
 
 .story__title {
-  font-family: "Rubik";
+  font-family: $font-main;
   letter-spacing: normal;
   font-stretch: normal;
   font-style: normal;
@@ -71,7 +96,7 @@
 .story__text,
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
-  font-family: "Open Sans";
+  font-family: $font-secondary;
   text-align: center;
 }
 
