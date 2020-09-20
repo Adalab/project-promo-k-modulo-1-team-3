@@ -1,6 +1,6 @@
 .story,
-.strengths,
-.weaknesses,
+.aboutUS__strengths,
+.aboutUS__weaknesses,
 .adalabers {
   padding: 30px 15px 30px 15px;
 }
@@ -77,17 +77,17 @@
 
 .story__text {
   font-size: 24px;
-  color: #14d9c4;
+  color: $color-secondary;
 }
 
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
-  color: #099d8d;
+  color: $color-secondary;
   font-size: 22px;
 }
 
 @media all and (min-width: 768px) {
-  .about-us-wrapper {
+  .aboutUS__wrapper {
     display: flex;
     flex-direction: row;
   }

@@ -1,0 +1,544 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* ESTILOS HEADER */
+/* HEADER */
+.page__header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem; }
+
+/* ESTILOS HEADER */
+.header {
+  width: 100%;
+  height: 105px;
+  box-sizing: border-box;
+  position: fixed;
+  align-content: center;
+  text-transform: uppercase;
+  background: rgba(9, 157, 141, 0.95);
+  opacity: 95%;
+  z-index: 2; }
+
+/* NOMBRE EQUIPO */
+.header__headerName {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  opacity: 95%; }
+
+/* MENÚ */
+.header__teamName {
+  line-height: 30px;
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: white;
+  padding-top: 15px; }
+
+.header__menu {
+  display: block;
+  width: 100vw;
+  height: 45px; }
+
+.header__menuList {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  list-style: none;
+  background-color: #14d9c4; }
+
+/* LINKS MENÚ */
+.header__link--team,
+.header__link--aboutus,
+.header__link--contact {
+  line-height: 30px;
+  font-family: "rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: white; }
+
+.header__link--team {
+  width: 56px;
+  height: 30px; }
+
+.header__link--aboutus {
+  width: 121px;
+  height: 30px; }
+
+.header__link--contact {
+  width: 80px;
+  height: 30px; }
+
+/* HERO */
+/* ESTILOS HERO */
+.hero__image {
+  width: 100vw;
+  margin-top: 60px; }
+
+/* LEMA HERO */
+.hero__motto {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  top: -30px;
+  background-color: white; }
+
+.hero__mottoText {
+  padding: 15px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal; }
+
+/* ABOUT US */
+.story,
+.aboutUS__strengths,
+.aboutUS__weaknesses,
+.adalabers {
+  padding: 30px 15px 30px 15px; }
+
+.story {
+  margin-top: -66px;
+  padding-top: 45px; }
+  @media all and (min-width: 768px) {
+    .story {
+      padding: 45px 45px 60px 45px; } }
+  @media all and (min-width: 1200px) {
+    .story {
+      padding: 45px 300px 60px 300px; } }
+
+.aboutUS__strengths {
+  padding-top: 0;
+  padding-bottom: 0; }
+  @media all and (min-width: 768px) {
+    .aboutUS__strengths {
+      padding: 15px 15px 60px 45px;
+      margin-top: -30px;
+      flex: 1; } }
+  @media all and (min-width: 1200px) {
+    .aboutUS__strengths {
+      padding: 15px 30px 60px 138px; } }
+
+.aboutUS__weaknesses {
+  padding-bottom: 45px; }
+  @media all and (min-width: 768px) {
+    .aboutUS__weaknesses {
+      padding: 15px 45px 60px 15px;
+      margin-top: -30px;
+      flex: 1; } }
+  @media all and (min-width: 1200px) {
+    .aboutUS__weaknesses {
+      padding: 15px 138px 60px 30px; } }
+
+.aboutUS__triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 31px solid transparent;
+  border-right: 31px solid transparent;
+  border-top: 31px solid white;
+  margin: -1px auto; }
+
+.aboutUS {
+  background-color: #b8b8b9; }
+  @media all and (min-width: 1200px) {
+    .aboutUS {
+      margin: auto 138px; } }
+
+.story__title {
+  font-family: "Rubik";
+  letter-spacing: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 45px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: 500; }
+
+.story__text,
+.aboutUS__strengths--text,
+.aboutUS__weaknesses--text {
+  font-family: "Open Sans";
+  text-align: center; }
+
+.story__text {
+  font-size: 24px;
+  color: #54585a; }
+
+.aboutUS__strengths--text,
+.aboutUS__weaknesses--text {
+  color: #54585a;
+  font-size: 22px; }
+
+@media all and (min-width: 768px) {
+  .aboutUS__wrapper {
+    display: flex;
+    flex-direction: row; } }
+
+/* ADALABERS */
+/*.adalabers {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adalabers__title {
+  color: #099d8d;
+  font-size: 24px;
+  font-family: "Rubik";
+  line-height: 45px;
+  @media all and (min-width: 768px) {
+    margin-top: 45px;
+  }
+}
+
+.adalabers__adalabersContainer--odd,
+.adalabers__adalabersContainer--even {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 25px 60px 25px;
+  }
+}
+.adalabersContainer__girlImage {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  border: solid 5px #b8b8b9;
+  border-radius: 2%;
+  @media all and (min-width: 768px) {
+    width: 205px;
+  }
+}
+.adalabersContainer__girlText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  @media all and (min-width: 768px) {
+    width: 439px;
+  }
+}
+.adalabersContainer__girlName {
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Open Sans;
+  @media all and (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
+
+.adalabersContainer__girlDescription {
+  color: #54585a;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+}
+
+.adalabersContainer__icons {
+  display: flex;
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  justify-content: space-around;
+  a {
+    color: #099d8d;
+  }
+}
+
+.adalabersContainer__dot {
+  color: #54585a;
+}
+
+// --------------MEDIA QUERY 768------------------
+@media all and (min-width: 768px) {
+  .adalabers__adalabersContainer--odd {
+    .adalabersContainer__girlText {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px 20px 20px 20px;
+      margin-top: 30px;
+    }
+    .adalabersContainer__girlDescription {
+      text-align: left;
+    }
+  }
+
+  .adalabers__adalabersContainer--even {
+    flex-direction: row-reverse;
+    .adalabersContainer__girlText {
+      align-items: flex-end;
+    }
+    .adalabersContainer__girlDescription {
+      text-align: right;
+    }
+  }
+}*/
+.adalabers {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .adalabers__title {
+    color: #099d8d;
+    font-size: 24px;
+    font-family: "Rubik";
+    line-height: 45px;
+    margin-bottom: 30px; }
+    @media all and (min-width: 768px) {
+      .adalabers__title {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        /*esto lo he metido nuevo*/ } }
+  .adalabers__adalabersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media all and (min-width: 768px) {
+      .adalabers__adalabersContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0 25px 60px 25px; } }
+    @media all and (min-width: 768px) {
+      .adalabers__adalabersContainer--even {
+        flex-direction: row-reverse; } }
+
+.adalabersContainer__girlImage {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  border: solid 5px #b8b8b9;
+  border-radius: 2%; }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlImage {
+      width: 205px; } }
+
+.adalabersContainer__girlText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px; }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlText {
+      /*width: 439px;*/ } }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlText--odd {
+      align-items: flex-start; } }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlText--even {
+      align-items: flex-end; } }
+
+.adalabersContainer__girlName {
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Open Sans; }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlName {
+      margin-top: 0px; } }
+
+.adalabersContainer__girlDescription {
+  color: #54585a;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px; }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlDescription--odd {
+      text-align: left; } }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlDescription--even {
+      text-align: right; } }
+
+.adalabersContainer__icons {
+  display: flex;
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  justify-content: space-around; }
+  .adalabersContainer__icons a {
+    color: #099d8d; }
+
+.adalabersContainer__dot {
+  color: #54585a; }
+
+/* FOOTER */
+.page__footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #b8b8b9;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  position: relative; }
+  @media all and (min-width: 768px) {
+    footer {
+      align-items: start;
+      padding: 0 0 60px 0; } }
+
+.footer_footerMenu_nav .footerMenu_link--team,
+.footer_footerMenu_nav .footerMenu_link--team:visited,
+.footer_footerMenu_nav .footerMenu_link--aboutUs,
+.footer_footerMenu_nav .footerMenu_link--aboutUs:visited,
+.footer_footerMenu_nav .footerMenu_link--contact,
+.footer_footerMenu_nav .footerMenu_link--contact:visited {
+  color: inherit;
+  text-decoration: none; }
+
+.footerLogo__logo {
+  display: flex;
+  flex-direction: column; }
+  @media all and (min-width: 768px) {
+    .footerLogo__logo .footerLogo__logo {
+      padding: 15px 0 0 45px;
+      width: 115.9px;
+      height: 45px; } }
+  @media all and (min-width: 1200px) {
+    .footerLogo__logo .footerLogo__logo {
+      padding: 15px 0 0 138px; } }
+
+.footer__copy2020 {
+  height: 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #b8b8b9; }
+  @media all and (min-width: 768px) {
+    .footer__copy2020 .footer__copy2020 {
+      padding: 30px 0 0 45px; } }
+  @media all and (min-width: 1200px) {
+    .footer__copy2020 .footer__copy2020 {
+      padding: 30px 0 0 138px; } }
+
+.footer__footerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  width: 114px;
+  height: 60px;
+  opacity: 0.75;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  top: 0;
+  right: 0; }
+  @media all and (min-width: 768px) {
+    .footer__footerMenu {
+      order: 2;
+      padding: 25px 45px 0 0;
+      margin-top: 16px;
+      display: block;
+      padding: 8px 0; } }
+  @media all and (min-width: 1200) {
+    .footer__footerMenu .footer__footerMenu {
+      padding: 25px 138px 0 0; } }
+
+@media all and (min-width: 768px) {
+  .footer_footerMenu_nav {
+    position: absolute;
+    top: 0;
+    right: 0; } }
+
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    padding: 0 45px 0 45px; }
+  .headername {
+    text-align: left; }
+  .menu {
+    height: auto;
+    width: 80%; }
+  .headermenu {
+    padding: 0;
+    justify-content: space-between; }
+  /* ------------------------HEADER SECTION -ENDS----------------------*/
+  /* ------------------------HERO SECTION -BEGINS----------------------*/
+  .motto {
+    margin: 0 115px 0 115px;
+    top: -40px; }
+  /* ------------------------HERO SECTION -ENDS----------------------*/
+  /* ----------ABOUT US SECTION- ENDS------------ */
+  /*---------------ADALABERS SECTION -START---------------*/ }
+
+/*------------------------BREAKPOINT PARA DESKTOP----------------------*/
+@media all and (min-width: 1200px) {
+  /* ------------HEADER SECTION START ------------ */
+  .header {
+    padding: 0 138px 0 138px; }
+  .menu {
+    width: 50%; }
+  .motto {
+    margin: 0 138px 0 138px;
+    top: -60px; } }
+
+/*# sourceMappingURL=main.css.map */
