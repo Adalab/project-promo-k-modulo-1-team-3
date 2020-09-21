@@ -121,7 +121,6 @@
     font-size: 24px;
     font-family: $font-main;
     line-height: 45px;
-    margin-bottom: 30px;
     @media all and (min-width: 768px) {
       margin-top: 45px;
       margin-bottom: 45px; /*esto lo he metido nuevo*/
@@ -186,10 +185,13 @@
     color: #000000;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 20px;
-    font-weight: bold;
     text-align: center;
     font-family: $font-secondary;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
     @media all and (min-width: 768px) {
       margin-top: 0px;
     }
