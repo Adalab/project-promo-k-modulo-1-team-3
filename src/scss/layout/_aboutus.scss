@@ -1,11 +1,6 @@
-.story,
-.aboutUS__strengths,
-.aboutUS__weaknesses {
-  padding: 30px 15px 30px 15px;
-}
 .story {
   margin-top: -66px;
-  padding-top: 45px;
+  padding: 60px 15px 30px 15px;
   @media all and (min-width: 768px) {
     padding: 45px 45px 60px 45px;
   }
@@ -15,7 +10,6 @@
 }
 .aboutUS__strengths,
 .aboutUS__weaknesses {
-  padding: 0 30;
   &--title {
     font-family: $font-main;
     font-size: 22px;
@@ -25,17 +19,29 @@
     font-style: normal;
     line-height: 45px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 15px;
     font-weight: 500;
   }
+}
+
+.aboutUS__strengths {
+  padding: 15px 15px 15px 15px;
   @media all and (min-width: 768px) {
+    width: 50%;
     padding: 15px 15px 60px 45px;
-    margin-top: -30px;
-    flex: 1;
   }
   @media all and (min-width: 1200px) {
-    padding: 15px 30px 60px 138px;
+    padding: 15px 23px 60px 45px;
+  }
+}
+
+.aboutUS__weaknesses {
+  padding: 15px 15px 45px 15px;
+  @media all and (min-width: 768px) {
+    width: 50%;
+    padding: 15px 45px 60px 15px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 15px 45px 60px 23px;
   }
 }
 // -----------He unificado estos dos selectores (arriba) para ahorrar código, y he metido dentro el title, que no estaba.-----------------
@@ -76,29 +82,36 @@
 }
 .story__title {
   font-family: $font-main;
-  letter-spacing: normal;
+  color: $color-tertiary;
+  font-size: 24px;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
   line-height: 45px;
   text-align: center;
   padding-bottom: 15px;
   font-weight: 500;
 }
+
 .story__text,
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
   font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-secondary;
   text-align: center;
 }
-.story__text {
-  font-size: 24px;
-  color: $color-secondary;
-}
+
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
-  color: $color-secondary;
-  font-size: 22px;
+  @media all and (min-width: 768px) {
+    padding-top: 15px;
+  }
 }
+
 @media all and (min-width: 768px) {
   .aboutUS__wrapper {
     display: flex;
