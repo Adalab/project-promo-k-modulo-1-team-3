@@ -1,25 +1,44 @@
 <main>
-  <div>
-    <h1>Contacta con nosotras</h1>
-    <p>
+  <div class="introContainer">
+    <h1 class="introContainer__title">Contacta con nosotras</h1>
+    <p class="introContainer__text">
       En estos momentos todas nuestras líneas están saturadas. Si quieres
       ponerte en contacto con nosotras, rellena el siguiente formulario y te
       responderemos lo antes posible.
     </p>
-    <small>Todos los campos marcados con <span>*</span> son obligatorios</small>
+    <small class="introContainer__small"
+      >Todos los campos marcados con <span class="star">*</span> son
+      obligatorios</small
+    >
   </div>
 
-  <form class="loqsea" action="/signup" method="post">
-    <label for="firstName">Nombre completo <span>*</span> </label>
+  <form class="formContainer" action="/signup" method="post">
+    <label for="firstName">Nombre completo <span class="star">*</span> </label>
     <input id="firstName" type="text" name="firstName" placeholder="Nombre" />
-    <label for="email">E-mail <span>*</span></label>
-    <input id="email" type="email" name="email" />
+    <label for="email">E-mail <span class="star">*</span></label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      placeholder="nombre.apellidos@mail.com"
+    />
 
     <label for="telephone">Teléfono</label>
-    <input id="telephone" type="tel" name="telephone" />
+    <input
+      id="telephone"
+      type="tel"
+      name="telephone"
+      placeholder="ej.: 123456789"
+    />
 
-    <label for="message">Mensaje <span>*</span> </label>
-    <textarea id="message" name="message" rows="8" cols="80"></textarea>
+    <label for="message">Mensaje <span class="star">*</span> </label>
+    <textarea
+      id="message"
+      name="message"
+      rows="8"
+      cols="80"
+      placeholder="¿Qué necesitas?"
+    ></textarea>
 
     <input type="submit" value="Enviar" />
   </form>
