@@ -82,9 +82,11 @@
   } 
 }
 
-.footer__footerMenuLink li {
+  @media all and (min-width: 768px) {
+    .footer__footerMenuLink li {
   display: block;
   padding: 8px 0;
+    }
 }
 
 .footer__footerMenuLink {
