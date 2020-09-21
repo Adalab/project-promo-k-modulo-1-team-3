@@ -75,14 +75,14 @@
   margin: -1px auto;
 }
 .aboutUS {
-  background-color: $color-secondary;
+  background-color: $color-secondary-light;
   @media all and (min-width: 1200px) {
     margin: auto 138px;
   }
 }
 .story__title {
   font-family: $font-main;
-  color: $color-tertiary-light;
+  color: $color-tertiary;
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
