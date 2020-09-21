@@ -1,2 +1,47 @@
 @import "./header.scss";
+
+.imageContactContainer__image {
+  width: 100vw;
+  margin-top: 60px;
+}
+.main {
+  margin: 30px 15px 60px 15px;
+
+  &__introContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &--title {
+      font-family: $font-main;
+      text-transform: uppercase;
+      color: $color-tertiary;
+      font-size: $font-title;
+    }
+    &--text {
+      font-family: $font-secondary;
+      color: $color-secondary;
+      font-size: $font-text;
+      padding: 15px 15px;
+    }
+    &--small {
+      font-family: $font-secondary;
+      color: $color-secondary;
+      font-size: 14px;
+      padding-top: 15px;
+      padding-bottom: 60px;
+    }
+  }
+  &__formContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-secondary;
+    font-size: 14px;
+    color: $color-secondary;
+  }
+}
+
+.star {
+  color: $color-tertiary-light;
+}
 @import "./footer.scss";
