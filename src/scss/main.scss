@@ -125,10 +125,13 @@ body {
 
 /* ADALABERS */
 @import "./layout/adalabers.scss";
+@import "./layout/animation.scss";
 
 /* FOOTER */
 @import "./layout/footer.scss";
-//   /* ------------------------MEDIA QUERIES----------------------
+
+/* CONTACT PAGE*/
+@import "./layout/contact.scss"; //   /* ------------------------MEDIA QUERIES----------------------
 // /*------------------------BREAKPOINT PARA TABLET----------------------*/
 // /* ------------------------HEADER SECTION -STARTS----------------------*/
 // @media all and (min-width: 768px) {
