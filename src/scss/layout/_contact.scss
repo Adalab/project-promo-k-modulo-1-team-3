@@ -6,7 +6,6 @@
 }
 .main {
   margin: 30px auto 60px auto;
-  max-width: 290px;
   @media all and (min-width: 768px) {
     max-width: 442px;
     margin: 30px auto 60px auto;
@@ -46,7 +45,11 @@
     font-family: $font-secondary;
     font-size: 14px;
     color: $color-secondary;
-
+    // quitar el focus outline 
+    @media all and (max-width: 767px) {
+      max-width: 300px;
+      margin: 30px auto 60px auto;
+    }
     &--fieldName {
       display: flex;
       flex-direction: column;
@@ -54,12 +57,12 @@
     }
     &--fieldEmail {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       margin-bottom: 15px;
     }
     &--fieldTelephone {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       margin-bottom: 15px;
     }
     &--fieldMessage {
@@ -67,6 +70,7 @@
       flex-direction: column;
       margin-bottom: 15px;
     }
+
   }
 }
 .star {
@@ -89,6 +93,7 @@
   border-radius: 3px;
   @media all and (min-width: 768px) {
     width: 206px;
+    align-self: flex-end;
   }
   @media all and (min-width: 1200px) {
     width: 278px;
@@ -96,3 +101,23 @@
 }
 
 @import "./footer.scss";
+
+.variableBoxName {
+  height: 45px;
+  margin-top: 5px;
+}
+
+.variableBoxEmail {
+  height: 45px;
+  margin-top: 5px;
+}
+
+.variableBoxTelephone {
+  height: 45px;
+  margin-top: 5px;
+}
+
+.variableBoxMsg {
+  margin-top: 5px;
+}
+
