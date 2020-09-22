@@ -20,6 +20,47 @@
   </div>
 
   <form class="main__formContainer" action="/signup" method="post">
+    <div class="main__formContainer--fieldName">
+      <label for="firstName"
+        >Nombre completo <span class="star">*</span>
+      </label>
+      <input id="firstName" type="text" name="firstName" placeholder="Nombre" />
+    </div>
+    <div class="main__formContainer--fieldEmail">
+      <label for="email">E-mail <span class="star">*</span></label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="nombre.apellidos@mail.com"
+      />
+    </div>
+    <div class="main__formContainer--fieldTelephone">
+      <label for="telephone">Teléfono</label>
+      <input
+        id="telephone"
+        type="tel"
+        name="telephone"
+        placeholder="ej.: 123456789"
+      />
+    </div>
+    <div class="main__formContainer--fieldMessage">
+      <label for="message">Mensaje <span class="star">*</span> </label>
+      <textarea
+        id="message"
+        name="message"
+        rows="8"
+        cols="25%"
+        placeholder="¿Qué necesitas?"
+      ></textarea>
+    </div>
+    <input class="main__formContainer--button" type="submit" value="ENVIAR" /> 
+    <!-- No hay un texto como tal en "enviar" por eso no se puede transformar en mayúscylas -->
+  <form
+    class="main__formContainer"
+    action="https://formspree.io/xeqpqkbv"
+    method="post"
+  >
     <label for="firstName">Nombre completo <span class="star">*</span> </label>
     <input id="firstName" type="text" name="firstName" placeholder="Nombre" />
     <label for="email">E-mail <span class="star">*</span></label>
