@@ -38,9 +38,16 @@
     font-family: $font-secondary;
     font-size: 14px;
     color: $color-secondary;
+
+    &--fieldName,
+    --fieldEmail,
+    --fieldTelephone,
+    --fieldMessage {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
-
 .star {
   color: $color-tertiary-light;
 }
