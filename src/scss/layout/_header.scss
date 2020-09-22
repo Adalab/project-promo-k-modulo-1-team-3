@@ -91,6 +91,7 @@
   line-height: 30px;
   font-family: $font-main;
   font-size: 15px;
+  transition: background-color 0.5s, border-radius 0.5s;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -98,6 +99,13 @@
   letter-spacing: normal;
   text-decoration: none;
   color: $color-white;
+  background-color: none;
+  padding: 6px;
+  border-radius: 0;
+  &:hover {
+    background-color: rgb(24, 124, 124);
+    border-radius: 5px;
+  }
 }
 .header__link--team {
   width: 56px;
