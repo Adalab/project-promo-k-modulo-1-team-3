@@ -5,8 +5,16 @@
   margin-top: 60px;
 }
 .main {
-  margin: 30px 15px 60px 15px;
-
+  margin: 30px auto 60px auto;
+  max-width: 290px;
+  @media all and (min-width: 768px) {
+    max-width: 442px;
+    margin: 30px auto 60px auto;
+  }
+  @media all and (min-width: 1200px) {
+    max-width: 600px;
+    margin: 45px auto 120px auto;
+  }
   &__introContainer {
     display: flex;
     flex-direction: column;
@@ -39,16 +47,52 @@
     font-size: 14px;
     color: $color-secondary;
 
-    &--fieldName,
-    --fieldEmail,
-    --fieldTelephone,
-    --fieldMessage {
+    &--fieldName {
       display: flex;
       flex-direction: column;
+      margin-bottom: 15px;
+    }
+    &--fieldEmail {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    &--fieldTelephone {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    &--fieldMessage {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
     }
   }
 }
 .star {
   color: $color-tertiary-light;
 }
+
+.main__formContainer--button {
+  height: 45px;
+  font-family: "Open Sans";
+  color: $color-white;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  background-color: $color-tertiary;
+  border: none;
+  border-radius: 3px;
+  @media all and (min-width: 768px) {
+    width: 206px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 278px;
+  }
+}
+
 @import "./footer.scss";
