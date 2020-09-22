@@ -39,12 +39,25 @@
     font-size: 14px;
     color: $color-secondary;
 
-    &--fieldName,
-    --fieldEmail,
-    --fieldTelephone,
-    --fieldMessage {
+    &--fieldName {
       display: flex;
       flex-direction: column;
+      margin-bottom: 15px;
+    }
+    &--fieldEmail {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    &--fieldTelephone {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    &--fieldMessage {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
     }
   }
 }
