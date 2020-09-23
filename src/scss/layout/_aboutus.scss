@@ -44,28 +44,6 @@
     padding: 15px 45px 60px 23px;
   }
 }
-// -----------He unificado estos dos selectores (arriba) para ahorrar código, y he metido dentro el title, que no estaba.-----------------
-//  {
-//   padding-bottom: 45px;
-//   &--title {
-//     font-family: $font-main;
-//     letter-spacing: normal;
-//     font-stretch: normal;
-//     font-style: normal;
-//     line-height: 45px;
-//     text-align: center;
-//     padding-bottom: 15px;
-//     font-weight: 500;
-//   }
-//   @media all and (min-width: 768px) {
-//     padding: 15px 45px 60px 15px;
-//     margin-top: -30px;
-//     flex: 1;
-//   }
-//   @media all and (min-width: 1200px) {
-//     padding: 15px 138px 60px 30px;
-//   }
-// }
 .aboutUS__triangleDown {
   width: 0;
   height: 0;
