@@ -105,20 +105,33 @@
 .variableBoxName {
   height: 45px;
   margin-top: 5px;
+  padding-left: 3px;
+  font-family: $font-secondary;
+  font-size: 14px;
 }
 
 .variableBoxEmail {
   height: 45px;
   margin-top: 5px;
+  padding-left: 3px;
+  font-family: $font-secondary;
+  font-size: 14px;
 }
 
 .variableBoxTelephone {
   height: 45px;
   margin-top: 5px;
+  padding-left: 3px;
+  font-family: $font-secondary;
+  font-size: 14px;
 }
 
 .variableBoxMsg {
   margin-top: 5px;
+  padding-left: 3px;
+  padding-top: 3px;
+  font-family: $font-secondary;
+  font-size: 14px;
 }
 
 *:focus {
