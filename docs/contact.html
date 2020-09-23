@@ -32,17 +32,13 @@
         <nav>
           <ul class="header__menuList">
             <li>
-              <a class="header__link--team" href="#team">Equipo</a>
+              <a class="header__link--team" href="./index.html#team">Equipo</a>
             </li>
             <li>
-              <a class="header__link--aboutus" href="#us">Quiénes somos</a>
+              <a class="header__link--aboutus" href="./index.html#us">Quiénes somos</a>
             </li>
             <li>
-<<<<<<< HEAD
-              <a class="header__link--contact" href="../contact.html">Contacto</a>
-=======
               <a class="header__link--contact" href="./contact.html">Contacto</a>
->>>>>>> 831d373d313ac33d233c71adcb3e11e84f60c524
             </li>
           </ul>
         </nav>
@@ -71,36 +67,46 @@
         >
       </div>
 
-      <form class="main__formContainer" action="/signup" method="post">
-        <label for="firstName">Nombre completo <span class="star">*</span> </label>
-        <input id="firstName" type="text" name="firstName" placeholder="Nombre" />
-        <label for="email">E-mail <span class="star">*</span></label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="nombre.apellidos@mail.com"
-        />
-
-        <label for="telephone">Teléfono</label>
-        <input
-          id="telephone"
-          type="tel"
-          name="telephone"
-          placeholder="ej.: 123456789"
-        />
-
-        <label for="message">Mensaje <span class="star">*</span> </label>
-        <textarea
-          id="message"
-          name="message"
-          rows="8"
-          cols="25%"
-          placeholder="¿Qué necesitas?"
-        ></textarea>
-
-        <input type="submit" value="Enviar" />
-      </form>
+      <form class="main__formContainer" action="https://formspree.io/xeqpqkbv" method="post">
+        <div class="main__formContainer--fieldName">
+          <label for="firstName"
+            >Nombre completo <span class="star">*</span>
+          </label>
+          <input class="variableBoxName" id="firstName" type="text" name="firstName" placeholder="Nombre" />
+        </div>
+        <div class="main__formContainer--fieldEmail">
+          <label for="email">E-mail <span class="star">*</span></label>
+          <input
+            class="variableBoxEmail"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="nombre.apellidos@mail.com"
+          />
+        </div>
+        <div class="main__formContainer--fieldTelephone">
+          <label for="telephone">Teléfono</label>
+          <input
+            class="variableBoxTelephone"
+            id="telephone"
+            type="tel"
+            name="telephone"
+            placeholder="ej.: 123456789"
+          />
+        </div>
+        <div class="main__formContainer--fieldMessage">
+          <label for="message">Mensaje <span class="star">*</span> </label>
+          <textarea
+            class="variableBoxMsg"
+            id="message"
+            name="message"
+            rows="8"
+            cols="25%"
+            placeholder="¿Qué necesitas?"
+          ></textarea>
+        </div>
+        <input class="main__formContainer--button" type="submit" value="ENVIAR" /> 
+        <!-- No hay un texto como tal en "enviar" por eso no se puede transformar en mayúscylas -->
     </main>
 
     <!-- FOOTER -->
@@ -108,28 +114,24 @@
       <p class="footer__copy2020">Las Chicas del Coding &copy2020</p>
       <nav class="footer__footerMenu">
         <ul class="footer__footerMenuLink">
-          <li><a class="footer__footerMenuLink--team" href="#team">Equipo</a></li>
           <li>
-            <a class="footer__footerMenuLink--aboutUs" href="#us">Quiénes somos</a>
+            <a class="footer__footerMenuLink--team" href="./index.html#team">Equipo</a>
           </li>
           <li>
-<<<<<<< HEAD
-            <a class="footer__footerMenuLink--contact" href="../contact.html"
-=======
-            <a class="footer__footerMenuLink--contact" href="./contact.html"
->>>>>>> 831d373d313ac33d233c71adcb3e11e84f60c524
-              >Contacto</a
-            >
+            <a class="footer__footerMenuLink--aboutUs" href="./index.html#us">Quiénes somos</a>
+          </li>
+          <li>
+            <a class="footer__footerMenuLink--contact" href="./contact.html">Contacto</a>
           </li>
         </ul>
       </nav>
       <div class="footer__footerLogo">
-        <a href="https://adalab.es/" target="blank"
+        <a href="https://adalab.es/empresas/" target="blank"
           ><img
             class="footerLogo__logo"
             src="./assets/images/logo/logoadalab.png"
-            alt="logo-adalab"
-        /></a>
+            alt="logo-adalab"/>
+          </a>
       </div>
     </footer>
 
