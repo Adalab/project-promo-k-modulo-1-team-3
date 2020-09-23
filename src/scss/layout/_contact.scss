@@ -3,6 +3,9 @@
 .imageContactContainer__image {
   width: 100vw;
   margin-top: 60px;
+  @media all and (min-width: 768px) {
+    margin-top: 155px;
+  }
 }
 .main {
   margin: 30px auto 60px auto;

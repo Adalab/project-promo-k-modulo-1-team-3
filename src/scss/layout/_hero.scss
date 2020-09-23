@@ -3,6 +3,9 @@
 .hero__image {
   width: 100vw;
   margin-top: 110px;
+  @media all and (min-width: 768px) {
+    margin-top: 155px;
+  }
 }
 
 /* LEMA HERO */
