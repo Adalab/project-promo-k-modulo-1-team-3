@@ -7,7 +7,7 @@
 
 .header {
   width: 100%;
-  height: 105px;
+  height: 155px;
   box-sizing: border-box;
   position: fixed;
   align-content: center;
@@ -18,7 +18,7 @@
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    height: 60px;
+    height: 110px;
     align-items: center;
     padding: 0 45px 0 45px;
   }
@@ -29,9 +29,9 @@
 /* NOMBRE EQUIPO */
 .header__headerName {
   width: 100%;
-  height: 60px;
-  text-align: center;
+  height: 110px;
   opacity: 95%;
+  display: flex;
   @media all and (min-width: 768px) {
     text-align: left;
   }
@@ -39,9 +39,12 @@
 
 /* MENÚ */
 .header__teamName {
-  position: absolute;
-  top: -4px;
-  left: 10%;
+  height: 110px;
+  width: 190px;
+  margin: 0 auto;
+  @media all and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .header__menu {
