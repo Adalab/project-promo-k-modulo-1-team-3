@@ -24,7 +24,7 @@
       <label for="firstName"
         >Nombre completo <span class="star">*</span>
       </label>
-      <input class="variableBoxName" id="firstName" type="text" name="firstName" placeholder="Nombre" />
+      <input class="variableBoxName" id="firstName" type="text" name="firstName" placeholder="Nombre" required />
     </div>
     <div class="main__formContainer--fieldEmail">
       <label for="email">E-mail <span class="star">*</span></label>
@@ -34,6 +34,7 @@
         type="email"
         name="email"
         placeholder="nombre.apellidos@mail.com"
+        required
       />
     </div>
     <div class="main__formContainer--fieldTelephone">
@@ -54,7 +55,8 @@
         name="message"
         rows="8"
         cols="25%"
-        placeholder="¿Qué necesitas?"
+        placeholder="¿Qué necesitas?" 
+        required
       ></textarea>
     </div>
     <input class="main__formContainer--button" type="submit" value="ENVIAR" /> 
