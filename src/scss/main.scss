@@ -1,22 +1,26 @@
 // Core
 @import "core/reset";
 @import "core/variables";
+@import "core/mixins";
 
-body {
-  width: 100%;
-  box-sizing: border-box;
-}
+// Components
+@import "components/links";
+
+// Layout
+/* BODY */
+@import "./layout/page.scss";
 
 /* HEADER */
 @import "./layout/header.scss";
+
 /* HERO */
 @import "./layout/hero.scss";
+
 /* ABOUT US */
 @import "./layout/aboutus.scss";
 
 /* ADALABERS */
 @import "./layout/adalabers.scss";
-@import "./layout/animation.scss";
 
 /* FOOTER */
 @import "./layout/footer.scss";
