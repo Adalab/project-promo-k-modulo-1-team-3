@@ -1,19 +1,25 @@
 .adalabers {
   width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 30px 15px 20px 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  @include tablet {
+    padding: 45px 45px 60px 45px;
+  }
+  @include desktop {
+    padding: 45px 200px 60px 200px;
+  }
   &__title {
     color: $color-tertiary;
     font-size: 24px;
     font-family: $font-main;
     font-weight: 500;
     line-height: 45px;
+    text-align: center;
     @include tablet {
-      margin-top: 45px;
-      margin-bottom: 45px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
   }
   &__adalabersContainer {
@@ -41,7 +47,7 @@
     border: solid 5px $color-secondary-light;
     border-radius: 2%;
     @include tablet {
-      width: 205px;
+      width: 205px; 
     }
   }
   &__girlText {
@@ -49,8 +55,8 @@
     flex-direction: column;
     align-items: center;
     padding: 25px;
-    @include tablet {
-      width: 439px;
+    @include desktop {
+      width: 639px;
     }
     &--odd {
       @include tablet {

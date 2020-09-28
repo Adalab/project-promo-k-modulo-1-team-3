@@ -53,86 +53,56 @@
       margin: 30px auto 60px auto;
     }
     &--fieldName {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
+      @include contact;
     }
     &--fieldEmail {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
+      @include contact;
     }
     &--fieldTelephone {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
+      @include contact;
     }
     &--fieldMessage {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
+      @include contact;
     }
-
+    &--button {
+      height: 45px;
+      font-family: "Open Sans";
+      color: $color-white;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      background-color: $color-tertiary;
+      border: none;
+      border-radius: 3px;
+      @include tablet {
+        width: 206px;
+        align-self: flex-end;
+      }
+      @include desktop {
+        width: 278px;
+      }
+    }
   }
 }
 .star {
   color: $color-tertiary-light;
 }
 
-.main__formContainer--button {
-  height: 45px;
-  font-family: "Open Sans";
-  color: $color-white;
-  font-size: 16px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  background-color: $color-tertiary;
-  border: none;
-  border-radius: 3px;
-  @include tablet {
-    width: 206px;
-    align-self: flex-end;
-  }
-  @include desktop {
-    width: 278px;
-  }
-}
-
 @import "./footer.scss";
 
-.variableBoxName {
-  height: 45px;
-  margin-top: 5px;
-  padding-left: 3px;
-  font-family: $font-secondary;
-  font-size: 14px;
-}
-
-.variableBoxEmail {
-  height: 45px;
-  margin-top: 5px;
-  padding-left: 3px;
-  font-family: $font-secondary;
-  font-size: 14px;
-}
-
+.variableBoxName,
+.variableBoxEmail,
 .variableBoxTelephone {
   height: 45px;
-  margin-top: 5px;
-  padding-left: 3px;
-  font-family: $font-secondary;
-  font-size: 14px;
+  @include variableBox;
 }
 
 .variableBoxMsg {
-  margin-top: 5px;
   padding-top: 3px;
-  padding-left: 3px;
-  font-family: $font-secondary;
-  font-size: 14px;
+  @include variableBox;
 }
 

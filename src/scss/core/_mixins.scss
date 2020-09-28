@@ -8,3 +8,16 @@
     @content;
   }
 }
+
+@mixin contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+@mixin variableBox {
+  margin-top: 5px;
+  padding-left: 3px;
+  font-family: $font-secondary;
+  font-size: 14px;
+}
