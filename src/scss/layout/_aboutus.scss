@@ -1,10 +1,10 @@
 .story {
   margin-top: -66px;
   padding: 60px 15px 30px 15px;
-  @media all and (min-width: 768px) {
+  @include tablet {
     padding: 45px 45px 60px 45px;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     padding: 45px 300px 60px 300px;
   }
 }
@@ -25,22 +25,22 @@
 
 .aboutUS__strengths {
   padding: 15px 15px 15px 15px;
-  @media all and (min-width: 768px) {
+  @include tablet {
     width: 50%;
     padding: 15px 15px 60px 45px;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     padding: 15px 23px 60px 45px;
   }
 }
 
 .aboutUS__weaknesses {
   padding: 15px 15px 45px 15px;
-  @media all and (min-width: 768px) {
+  @include tablet {
     width: 50%;
     padding: 15px 45px 60px 15px;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     padding: 15px 45px 60px 23px;
   }
 }
@@ -54,7 +54,7 @@
 }
 .aboutUS {
   background-color: $color-secondary-light;
-  @media all and (min-width: 1200px) {
+  @include desktop {
     margin: auto 138px;
   }
 }
@@ -85,13 +85,13 @@
 
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
-  @media all and (min-width: 768px) {
+  @include tablet {
     padding-top: 15px;
   }
 }
 
-@media all and (min-width: 768px) {
-  .aboutUS__wrapper {
+.aboutUS__wrapper {
+  @include tablet {
     display: flex;
     flex-direction: row;
   }

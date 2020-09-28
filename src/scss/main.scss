@@ -1,16 +1,21 @@
 // Core
-@import "core/reset";
-@import "core/variables";
+@import "./core/reset.scss";
+@import "./core/variables.scss";
+@import "./core/mixins.scss";
 
-body {
-  width: 100%;
-  box-sizing: border-box;
-}
+// Components
+@import "./components/links.scss";
+
+// Layout
+/* BODY */
+@import "./layout/page.scss";
 
 /* HEADER */
 @import "./layout/header.scss";
+
 /* HERO */
 @import "./layout/hero.scss";
+
 /* ABOUT US */
 @import "./layout/aboutus.scss";
 
