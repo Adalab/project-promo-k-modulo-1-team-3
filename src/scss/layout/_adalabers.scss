@@ -1,133 +1,28 @@
-/*.adalabers {
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.adalabers__title {
-  color: #099d8d;
-  font-size: 24px;
-  font-family: "Rubik";
-  line-height: 45px;
-  @media all and (min-width: 768px) {
-    margin-top: 45px;
-  }
-}
-
-.adalabers__adalabersContainer--odd,
-.adalabers__adalabersContainer--even {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media all and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0 25px 60px 25px;
-  }
-}
-.adalabersContainer__girlImage {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  width: 180px;
-  border: solid 5px #b8b8b9;
-  border-radius: 2%;
-  @media all and (min-width: 768px) {
-    width: 205px;
-  }
-}
-.adalabersContainer__girlText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px;
-  @media all and (min-width: 768px) {
-    width: 439px;
-  }
-}
-.adalabersContainer__girlName {
-  color: #000000;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  font-family: Open Sans;
-  @media all and (min-width: 768px) {
-    margin-top: 0px;
-  }
-}
-
-.adalabersContainer__girlDescription {
-  color: #54585a;
-  font-size: 16px;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  line-height: 24px;
-}
-
-.adalabersContainer__icons {
-  display: flex;
-  width: 25%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  justify-content: space-around;
-  a {
-    color: #099d8d;
-  }
-}
-
-.adalabersContainer__dot {
-  color: #54585a;
-}
-
-// --------------MEDIA QUERY 768------------------
-@media all and (min-width: 768px) {
-  .adalabers__adalabersContainer--odd {
-    .adalabersContainer__girlText {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0px 20px 20px 20px;
-      margin-top: 30px;
-    }
-    .adalabersContainer__girlDescription {
-      text-align: left;
-    }
-  }
-
-  .adalabers__adalabersContainer--even {
-    flex-direction: row-reverse;
-    .adalabersContainer__girlText {
-      align-items: flex-end;
-    }
-    .adalabersContainer__girlDescription {
-      text-align: right;
-    }
-  }
-}*/
 .adalabers {
   width: 100%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 30px 15px 20px 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  @media all and (min-width: 768px) {
+    padding: 45px 45px 60px 45px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 45px 200px 60px 200px;
+  }
   &__title {
     color: $color-tertiary;
     font-size: 24px;
     font-family: $font-main;
     font-weight: 500;
     line-height: 45px;
+    text-align: center;
     @media all and (min-width: 768px) {
-      margin-top: 45px;
-      margin-bottom: 45px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
   }
-
   &__adalabersContainer {
     display: flex;
     flex-direction: column;
@@ -161,8 +56,8 @@
     flex-direction: column;
     align-items: center;
     padding: 25px;
-    @media all and (min-width: 768px) {
-      width: 439px;
+    @media all and (min-width: 1200px) {
+      width: 639px;
     }
     &--odd {
       @media all and (min-width: 768px) {
