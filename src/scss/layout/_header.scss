@@ -1,7 +1,7 @@
 .page__header {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 3rem;
+  margin: 0 0 3rem 0;
 }
 /* ESTILOS HEADER */
 
@@ -12,9 +12,9 @@
   position: fixed;
   align-content: center;
   text-transform: uppercase;
-  background: $color-tertiary;
   opacity: 95%;
   z-index: 2;
+  background: $color-tertiary;
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -25,56 +25,49 @@
   @include desktop {
     padding: 0 138px 0 138px;
   }
-}
-/* NOMBRE EQUIPO */
-.header__headerName {
-  width: 100%;
-  height: 110px;
-  opacity: 95%;
-  display: flex;
-  @include tablet {
-    text-align: left;
+  &__headerName {
+    width: 100%;
+    height: 110px;
+    opacity: 95%;
+    display: flex;
+    @include tablet {
+      text-align: left;
+    }
   }
-}
-
-/* MENÚ */
-.header__teamName {
-  height: 110px;
-  width: 190px;
-  margin: 0 auto;
-  @include tablet {
-    margin-left: 0;
+  &__teamName {
+    height: 110px;
+    width: 190px;
+    margin: 0 auto;
+    @include tablet {
+      margin-left: 0;
+    }
   }
-}
-
-.header__menu {
-  display: block;
-  width: 100vw;
-  height: 45px;
-  @include tablet {
-    height: auto;
-    width: 80%;
-    background: none;
+  &__menu {
+    display: block;
+    width: 100vw;
+    height: 45px;
+    @include tablet {
+      height: auto;
+      width: 80%;
+      background: none;
+    }
+    @include desktop {
+      width: 50%;
+    }
   }
-  @include desktop {
-    width: 50%;
-  }
-}
-.header__menuList {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  padding-left: 16px;
-  padding-right: 17px;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  list-style: none;
-  background-color: $color-tertiary-light;
-  @include tablet {
-    padding: 0;
-    justify-content: space-between;
-    background: none;
+  &__menuList {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 8px 17px 7px 16px;
+    list-style: none;
+    background-color: $color-tertiary-light;
+    @include tablet {
+      padding: 0;
+      justify-content: space-between;
+      background: none;
+    }
   }
 }
