@@ -15,14 +15,14 @@
   background: $color-tertiary;
   opacity: 95%;
   z-index: 2;
-  @media all and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-direction: row;
     height: 110px;
     align-items: center;
     padding: 0 45px 0 45px;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     padding: 0 138px 0 138px;
   }
 }
@@ -32,7 +32,7 @@
   height: 110px;
   opacity: 95%;
   display: flex;
-  @media all and (min-width: 768px) {
+  @include tablet {
     text-align: left;
   }
 }
@@ -42,7 +42,7 @@
   height: 110px;
   width: 190px;
   margin: 0 auto;
-  @media all and (min-width: 768px) {
+  @include tablet {
     margin-left: 0;
   }
 }
@@ -51,12 +51,12 @@
   display: block;
   width: 100vw;
   height: 45px;
-  @media all and (min-width: 768px) {
+  @include tablet {
     height: auto;
     width: 80%;
     background: none;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     width: 50%;
   }
 }
@@ -72,45 +72,9 @@
   padding-bottom: 7px;
   list-style: none;
   background-color: $color-tertiary-light;
-  @media all and (min-width: 768px) {
+  @include tablet {
     padding: 0;
     justify-content: space-between;
     background: none;
   }
-}
-/* LINKS MENÚ */
-.header__link--team,
-.header__link--aboutus,
-.header__link--contact {
-  line-height: 30px;
-  font-family: $font-main;
-  font-size: 15px;
-  transition: background-color 0.5s, border-radius 0.5s;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-decoration: none;
-  color: $color-white;
-  background-color: none;
-  padding: 6px;
-  border-radius: 0;
-  &:hover {
-    background-color: rgb(24, 124, 124);
-    border-radius: 5px;
-  }
-}
-.header__link--team {
-  width: 56px;
-  height: 30px;
-}
-.header__link--aboutus {
-  width: 121px;
-  height: 30px;
-}
-
-.header__link--contact {
-  width: 80px;
-  height: 30px;
 }

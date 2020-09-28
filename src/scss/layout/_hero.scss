@@ -12,11 +12,11 @@
   margin-right: 15px;
   top: -30px;
   background-color: $color-white;
-  @media all and (min-width: 768px) {
+  @include tablet {
     margin: 0 115px 0 115px;
     top: -40px;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     margin: 0 138px 0 138px;
     top: -60px;
   }

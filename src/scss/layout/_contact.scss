@@ -3,17 +3,17 @@
 .imageContactContainer__image {
   width: 100vw;
   margin-top: 110px;
-  @media all and (min-width: 768px) {
+  @include tablet {
     margin-top: 110px;
   }
 }
 .main {
   margin: 30px auto 60px auto;
-  @media all and (min-width: 768px) {
+  @include tablet {
     max-width: 442px;
     margin: 30px auto 60px auto;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     max-width: 600px;
     margin: 45px auto 120px auto;
   }
@@ -48,95 +48,203 @@
     font-family: $font-secondary;
     font-size: 14px;
     color: $color-secondary;
-    // quitar el focus outline 
-    @media all and (max-width: 767px) {
+    @include tablet {
       max-width: 300px;
       margin: 30px auto 60px auto;
     }
     &--fieldName {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
+      @include contact;
     }
     &--fieldEmail {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
+      @include contact;
     }
     &--fieldTelephone {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
+      @include contact;
     }
     &--fieldMessage {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
+      @include contact;
     }
-
+    &--button {
+      height: 45px;
+      font-family: "Open Sans";
+      color: $color-white;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      background-color: $color-tertiary;
+      border: none;
+      border-radius: 3px;
+      @include tablet {
+        width: 206px;
+        align-self: flex-end;
+      }
+      @include desktop {
+        width: 278px;
+      }
+    }
   }
 }
 .star {
   color: $color-tertiary-light;
 }
 
-.main__formContainer--button {
-  height: 45px;
-  font-family: "Open Sans";
-  color: $color-white;
-  font-size: 16px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  background-color: $color-tertiary;
-  border: none;
-  border-radius: 3px;
-  @media all and (min-width: 768px) {
-    width: 206px;
-    align-self: flex-end;
-  }
-  @media all and (min-width: 1200px) {
-    width: 278px;
-  }
-}
-
 @import "./footer.scss";
 
-.variableBoxName {
-  height: 45px;
-  margin-top: 5px;
-  padding-left: 3px;
-  font-family: $font-secondary;
-  font-size: 14px;
-}
-
-.variableBoxEmail {
-  height: 45px;
-  margin-top: 5px;
-  padding-left: 3px;
-  font-family: $font-secondary;
-  font-size: 14px;
-}
-
+.variableBoxName,
+.variableBoxEmail,
 .variableBoxTelephone {
   height: 45px;
-  margin-top: 5px;
-  padding-left: 3px;
-  font-family: $font-secondary;
-  font-size: 14px;
+  @include variableBox;
 }
 
 .variableBoxMsg {
-  margin-top: 5px;
-  padding-left: 3px;
   padding-top: 3px;
-  font-family: $font-secondary;
-  font-size: 14px;
+  @include variableBox;
 }
+  
+// @import "./header.scss";
 
-*:focus {
-  outline-color: $color-tertiary-light;
-}
+// .imageContactContainer__image {
+//   width: 100vw;
+//   margin-top: 110px;
+//   @media all and (min-width: 768px) {
+//     margin-top: 110px;
+//   }
+// }
+// .main {
+//   margin: 30px auto 60px auto;
+//   @media all and (min-width: 768px) {
+//     max-width: 442px;
+//     margin: 30px auto 60px auto;
+//   }
+//   @media all and (min-width: 1200px) {
+//     max-width: 600px;
+//     margin: 45px auto 120px auto;
+//   }
+//   &__introContainer {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: center;
+//     &--title {
+//       font-family: $font-main;
+//       text-transform: uppercase;
+//       color: $color-tertiary;
+//       font-size: $font-title;
+//     }
+//     &--text {
+//       font-family: $font-secondary;
+//       color: $color-secondary;
+//       font-size: $font-text;
+//       padding: 15px 15px;
+//     }
+//     &--small {
+//       font-family: $font-secondary;
+//       color: $color-secondary;
+//       font-size: 14px;
+//       padding-top: 15px;
+//       padding-bottom: 60px;
+//     }
+//   }
+//   &__formContainer {
+//     display: flex;
+//     flex-direction: column;
+//     font-family: $font-secondary;
+//     font-size: 14px;
+//     color: $color-secondary;
+//     // quitar el focus outline 
+//     @media all and (max-width: 767px) {
+//       max-width: 300px;
+//       margin: 30px auto 60px auto;
+//     }
+//     &--fieldName {
+//       display: flex;
+//       flex-direction: column;
+//       margin-bottom: 15px;
+//     }
+//     &--fieldEmail {
+//       display: flex;
+//       flex-direction: column;
+//       margin-bottom: 15px;
+//     }
+//     &--fieldTelephone {
+//       display: flex;
+//       flex-direction: column;
+//       margin-bottom: 15px;
+//     }
+//     &--fieldMessage {
+//       display: flex;
+//       flex-direction: column;
+//       margin-bottom: 15px;
+//     }
+
+//   }
+// }
+// .star {
+//   color: $color-tertiary-light;
+// }
+
+// .main__formContainer--button {
+//   height: 45px;
+//   font-family: "Open Sans";
+//   color: $color-white;
+//   font-size: 16px;
+//   font-weight: 600;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: normal;
+//   letter-spacing: normal;
+//   text-align: center;
+//   background-color: $color-tertiary;
+//   border: none;
+//   border-radius: 3px;
+//   @media all and (min-width: 768px) {
+//     width: 206px;
+//     align-self: flex-end;
+//   }
+//   @media all and (min-width: 1200px) {
+//     width: 278px;
+//   }
+// }
+
+// @import "./footer.scss";
+
+// .variableBoxName {
+//   height: 45px;
+//   margin-top: 5px;
+//   padding-left: 3px;
+//   font-family: $font-secondary;
+//   font-size: 14px;
+// }
+
+// .variableBoxEmail {
+//   height: 45px;
+//   margin-top: 5px;
+//   padding-left: 3px;
+//   font-family: $font-secondary;
+//   font-size: 14px;
+// }
+
+// .variableBoxTelephone {
+//   height: 45px;
+//   margin-top: 5px;
+//   padding-left: 3px;
+//   font-family: $font-secondary;
+//   font-size: 14px;
+// }
+
+// .variableBoxMsg {
+//   margin-top: 5px;
+//   padding-left: 3px;
+//   padding-top: 3px;
+//   font-family: $font-secondary;
+//   font-size: 14px;
+// }
+
+// *:focus {
+//   outline-color: $color-tertiary-light;
+// }
