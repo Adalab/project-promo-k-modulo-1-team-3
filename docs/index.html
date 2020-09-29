@@ -26,37 +26,59 @@
   </head>
   <body>
     <!--HEADER-->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header__headerName">
         <img
           class="header__teamName"
           src="./assets/images/logo/logoequipo.png"
-          alt=""
+          alt="Las Chicas del Coding"
+          title="Las Chicas del Coding"
         />
       </div>
-      <div class="header__menu">
-        <nav>
+      <div class="header__menu" aria-label="Menu">
+        <nav role="navigation">
           <ul class="header__menuList">
             <li>
-              <a class="header__link--team" href="./index.html#team">Equipo</a>
+              <a
+                class="header__link--team"
+                href="./index.html#team"
+                title="Ir a equipo"
+                aria-label="Ir a Equipo"
+                >Equipo</a
+              >
             </li>
             <li>
-              <a class="header__link--aboutus" href="./index.html#us"
+              <a
+                class="header__link--aboutus"
+                href="./index.html#us"
+                title="Ir a quiénes somos"
+                aria-label="Ir a quiénes somos"
                 >Quiénes somos</a
               >
             </li>
             <li>
-              <a class="header__link--contact" href="./contact.html">Contacto</a>
+              <a
+                class="header__link--contact"
+                href="./contact.html"
+                title="Contacta con nosotras"
+                aria-label="Contacta con nosotras"
+                >Contacto</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main role="main">
       <!--HERO-->
       <section class="hero">
-        <img class="hero__image" src="./assets/images/hero/hero768.jpg" alt="hero" />
+        <img
+          class="hero__image"
+          src="./assets/images/hero/hero768.jpg"
+          alt="Las Chicas del Coding"
+          aria-label="Imagen de cabecera"
+        />
         <div class="hero__motto">
           <p id="team" class="hero__mottoText">No es por nosotras, es por todas.</p>
         </div>
@@ -112,6 +134,7 @@
             class="adalabersContainer__girlImage"
             src="./assets/images/adalabers/arantxa_desktop.jpg"
             alt="Foto-Arantxa"
+            aria-label="Foto name"
           />
           <div class="adalabersContainer__girlText adalabersContainer__girlText--odd">
             <h2 class="adalabersContainer__girlName">Arantxa Delgado Ruiz</h2>
@@ -126,6 +149,8 @@
                 class="adalabersContainer__icons--twitter"
                 href="https://twitter.com/chopper_hat"
                 target="_blank"
+                title="Twitter"
+                aria-label="Ir a Twitter"
               >
                 <i class="fab fa-twitter"></i>
               </a>
@@ -134,6 +159,8 @@
                 class="adalabersContainer__icons--linkedin"
                 href="https://www.linkedin.com/in/arantxa-delgado-ruiz-64169268/"
                 target="_blank"
+                title="Linkedin"
+                aria-label="Ir a Linkedin"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
@@ -142,11 +169,18 @@
                 class="adalabersContainer__icons--github"
                 href="https://github.com/ArantxaDR"
                 target="_blank"
+                title="Github"
+                aria-label="Ir a Github"
               >
                 <i class="fab fa-github-alt"></i>
               </a>
               <div class="adalabersContainer__dot">·</div>
-              <a class="adalabersContainer__icons--email" href="mailto:arantxaderuiz@gmail.com">
+              <a
+                class="adalabersContainer__icons--email"
+                href="mailto:arantxaderuiz@gmail.com"
+                title="Email"
+                aria-label="Envía un mail"
+              >
                 <i class="fas fa-envelope"></i>
               </a>
             </div>
@@ -158,6 +192,7 @@
             class="adalabersContainer__girlImage"
             src="./assets/images/adalabers/araceli_desktop.jpg"
             alt="Foto-Araceli"
+            aria-label="Foto name"
           />
           <div class="adalabersContainer__girlText adalabersContainer__girlText--even">
             <h2 class="adalabersContainer__girlName">Araceli Lobo Casas</h2>
@@ -175,6 +210,8 @@
                 class="adalabersContainer__icons--twitter"
                 href="https://twitter.com/sralobo85"
                 target="_blank"
+                title="Twitter"
+                aria-label="Ir a Twitter"
               >
                 <i class="fab fa-twitter"></i>
               </a>
@@ -183,6 +220,8 @@
                 class="adalabersContainer__icons--linkedin"
                 href="https://www.linkedin.com/in/aracelilobo/"
                 target="_blank"
+                title="Linkedin"
+                aria-label="Ir a Linkedin"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
@@ -191,11 +230,18 @@
                 class="adalabersContainer__icons--github"
                 href="https://github.com/AraceliLobo"
                 target="_blank"
+                title="Github"
+                aria-label="Ir a Github"
               >
                 <i class="fab fa-github-alt"></i>
               </a>
               <div class="adalabersContainer__dot">·</div>
-              <a class="adalabersContainer__icons--email" href="mailto:a.lobocasas@gmail.com">
+              <a
+                class="adalabersContainer__icons--email"
+                href="mailto:a.lobocasas@gmail.com"
+                title="Email"
+                aria-label="Envía un mail"
+              >
                 <i class="fas fa-envelope"></i>
               </a>
             </div>
@@ -207,6 +253,7 @@
             class="adalabersContainer__girlImage"
             src="./assets/images/adalabers/milda_desktop.jpg"
             alt="Foto-Milda"
+            aria-label="Foto name"
           />
           <div class="adalabersContainer__girlText adalabersContainer__girlText--odd">
             <h2 class="adalabersContainer__girlName">Milda Grabyte</h2>
@@ -223,6 +270,8 @@
                 class="adalabersContainer__icons--twitter"
                 href="https://twitter.com/logic_emphasis"
                 target="_blank"
+                title="Twitter"
+                aria-label="Ir a Twitter"
               >
                 <i class="fab fa-twitter"></i>
               </a>
@@ -231,6 +280,8 @@
                 class="adalabersContainer__icons--linkedin"
                 href="https://www.linkedin.com/in/milda-grabyte-43b0331b7/"
                 target="_blank"
+                title="Linkedin"
+                aria-label="Ir a Linkedin"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
@@ -239,11 +290,18 @@
                 class="adalabersContainer__icons--github"
                 href="https://github.com/Milda-Grabyte"
                 target="_blank"
+                title="Github"
+                aria-label="Ir a Github"
               >
                 <i class="fab fa-github-alt"></i>
               </a>
               <div class="adalabersContainer__dot">·</div>
-              <a class="adalabersContainer__icons--email" href="mailto:milda.grabyte@gmail.com">
+              <a
+                class="adalabersContainer__icons--email"
+                href="mailto:milda.grabyte@gmail.com"
+                title="Email"
+                aria-label="Envía un mail"
+              >
                 <i class="fas fa-envelope"></i>
               </a>
             </div>
@@ -255,6 +313,7 @@
             class="adalabersContainer__girlImage"
             src="./assets/images/adalabers/celia_desktop.jpg"
             alt="Foto-Celia"
+            aria-label="Foto name"
           />
           <div class="adalabersContainer__girlText adalabersContainer__girlText--even">
             <h2 class="adalabersContainer__girlName">Celia Martín Fernández</h2>
@@ -271,6 +330,8 @@
                 class="adalabersContainer__icons--twitter"
                 href="https://twitter.com/celmrt"
                 target="_blank"
+                title="Twitter"
+                aria-label="Ir a Twitter"
               >
                 <i class="fab fa-twitter"></i>
               </a>
@@ -279,6 +340,8 @@
                 class="adalabersContainer__icons--linkedin"
                 href="https://www.linkedin.com/in/celiamf/"
                 target="_blank"
+                title="Linkedin"
+                aria-label="Ir a Linkedin"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
@@ -287,11 +350,18 @@
                 class="adalabersContainer__icons--github"
                 href="https://github.com/Celiamf"
                 target="_blank"
+                title="Github"
+                aria-label="Ir a Github"
               >
                 <i class="fab fa-github-alt"></i>
               </a>
               <div class="adalabersContainer__dot">·</div>
-              <a class="adalabersContainer__icons--email" href="mailto:celiamartinfern@gmail.com">
+              <a
+                class="adalabersContainer__icons--email"
+                href="mailto:celiamartinfern@gmail.com"
+                title="Email"
+                aria-label="Envía un mail"
+              >
                 <i class="fas fa-envelope"></i>
               </a>
             </div>
@@ -303,6 +373,7 @@
             class="adalabersContainer__girlImage"
             src="./assets/images/adalabers/ana_desktop.jpg"
             alt="Foto-Ana"
+            aria-label="Foto name"
           />
           <div class="adalabersContainer__girlText adalabersContainer__girlText--odd">
             <h2 class="adalabersContainer__girlName">Ana Martínez Fernández</h2>
@@ -319,6 +390,8 @@
                 class="adalabersContainer__icons--twitter"
                 href=""
                 target="_blank"
+                title="Twitter"
+                aria-label="Ir a Twitter"
               >
                 <i class="fab fa-twitter"></i>
               </a>
@@ -327,6 +400,8 @@
                 class="adalabersContainer__icons--linkedin"
                 href="https://www.linkedin.com/in/ana-mart%C3%ADnez-a850181b7/"
                 target="_blank"
+                title="Linkedin"
+                aria-label="Ir a Linkedin"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
@@ -335,11 +410,18 @@
                 class="adalabersContainer__icons--github"
                 href="https://github.com/anamartinezfernandez"
                 target="_blank"
+                title="Github"
+                aria-label="Ir a Github"
               >
                 <i class="fab fa-github-alt"></i>
               </a>
               <div class="adalabersContainer__dot">·</div>
-              <a class="adalabersContainer__icons--email" href="mailto:mailto:anamartinezf6@gmail.com">
+              <a
+                class="adalabersContainer__icons--email"
+                href="mailto:mailto:anamartinezf6@gmail.com"
+                title="Email"
+                aria-label="Envía un mail"
+              >
                 <i class="fas fa-envelope"></i>
               </a>
             </div>
@@ -350,28 +432,49 @@
 
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <p class="footer__copy2020">Las Chicas del Coding &copy2020</p>
-      <nav class="footer__footerMenu">
+      <nav class="footer__footerMenu" role="navigation">
         <ul class="footer__footerMenuLink">
           <li>
-            <a class="footer__footerMenuLink--team" href="./index.html#team">Equipo</a>
+            <a
+              class="footer__footerMenuLink--team"
+              href="./index.html#team"
+              aria-label="Ir a Equipo"
+              >Equipo</a
+            >
           </li>
           <li>
-            <a class="footer__footerMenuLink--aboutUs" href="./index.html#us">Quiénes somos</a>
+            <a
+              class="footer__footerMenuLink--aboutUs"
+              href="./index.html#us"
+              aria-label="Ir a Quiénes somos"
+              >Quiénes somos</a
+            >
           </li>
           <li>
-            <a class="footer__footerMenuLink--contact" href="./contact.html">Contacto</a>
+            <a
+              class="footer__footerMenuLink--contact"
+              href="./contact.html"
+              aria-label="Contacta con nosotras"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
       <div class="footer__footerLogo">
-        <a href="https://adalab.es/empresas/" target="blank"
+        <a
+          href="https://adalab.es/empresas/"
+          target="blank"
+          aria-label="Ir a la web de Adalab"
           ><img
             class="footer__footerLogo--logo"
             src="./assets/images/logo/logoadalab.png"
-            alt="logo-adalab"/>
-          </a>
+            alt="logo-adalab"
+            title="Adalab"
+            aria-label="Ir a la web de Adalab"
+          />
+        </a>
       </div>
     </footer>
 

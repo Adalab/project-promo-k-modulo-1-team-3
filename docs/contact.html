@@ -24,27 +24,44 @@
   </head>
   <body>
     <!--HEADER-->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header__headerName">
         <img
           class="header__teamName"
           src="./assets/images/logo/logoequipo.png"
-          alt=""
+          alt="Las Chicas del Coding"
+          title="Las Chicas del Coding"
         />
       </div>
-      <div class="header__menu">
-        <nav>
+      <div class="header__menu" aria-label="Menu">
+        <nav role="navigation">
           <ul class="header__menuList">
             <li>
-              <a class="header__link--team" href="./index.html#team">Equipo</a>
+              <a
+                class="header__link--team"
+                href="./index.html#team"
+                title="Ir a equipo"
+                aria-label="Ir a Equipo"
+                >Equipo</a
+              >
             </li>
             <li>
-              <a class="header__link--aboutus" href="./index.html#us"
+              <a
+                class="header__link--aboutus"
+                href="./index.html#us"
+                title="Ir a quiénes somos"
+                aria-label="Ir a quiénes somos"
                 >Quiénes somos</a
               >
             </li>
             <li>
-              <a class="header__link--contact" href="./contact.html">Contacto</a>
+              <a
+                class="header__link--contact"
+                href="./contact.html"
+                title="Contacta con nosotras"
+                aria-label="Contacta con nosotras"
+                >Contacto</a
+              >
             </li>
           </ul>
         </nav>
@@ -53,9 +70,9 @@
 
     <!--MAIN-->
     <div class="imageContactContainer">  
-      <img class="imageContactContainer__image" src="./assets/images/hero/herocontact.jpg" alt="hero"  />
+      <img class="imageContactContainer__image" src="./assets/images/hero/herocontact.jpg" alt="Centralita" aria-label="Imagen Contacta con nosotras"  />
     </div>
-    <main class="main">
+    <main class="main" role="main">
       <div class="main__introContainer">
         <h1 class="main__introContainer--title">Contacta con nosotras</h1>
         <p class="main__introContainer--text">
@@ -69,7 +86,7 @@
         >
       </div>
 
-      <form class="main__formContainer" action="https://formspree.io/xeqpqkbv" method="post">
+      <form class="main__formContainer" action="https://formspree.io/xeqpqkbv" method="post" role="form">
         <div class="main__formContainer--fieldName">
           <label for="firstName"
             >Nombre completo <span class="star">*</span>
@@ -112,28 +129,49 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <p class="footer__copy2020">Las Chicas del Coding &copy2020</p>
-      <nav class="footer__footerMenu">
+      <nav class="footer__footerMenu" role="navigation">
         <ul class="footer__footerMenuLink">
           <li>
-            <a class="footer__footerMenuLink--team" href="./index.html#team">Equipo</a>
+            <a
+              class="footer__footerMenuLink--team"
+              href="./index.html#team"
+              aria-label="Ir a Equipo"
+              >Equipo</a
+            >
           </li>
           <li>
-            <a class="footer__footerMenuLink--aboutUs" href="./index.html#us">Quiénes somos</a>
+            <a
+              class="footer__footerMenuLink--aboutUs"
+              href="./index.html#us"
+              aria-label="Ir a Quiénes somos"
+              >Quiénes somos</a
+            >
           </li>
           <li>
-            <a class="footer__footerMenuLink--contact" href="./contact.html">Contacto</a>
+            <a
+              class="footer__footerMenuLink--contact"
+              href="./contact.html"
+              aria-label="Contacta con nosotras"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
       <div class="footer__footerLogo">
-        <a href="https://adalab.es/empresas/" target="blank"
+        <a
+          href="https://adalab.es/empresas/"
+          target="blank"
+          aria-label="Ir a la web de Adalab"
           ><img
             class="footer__footerLogo--logo"
             src="./assets/images/logo/logoadalab.png"
-            alt="logo-adalab"/>
-          </a>
+            alt="logo-adalab"
+            title="Adalab"
+            aria-label="Ir a la web de Adalab"
+          />
+        </a>
       </div>
     </footer>
 
