@@ -1,3 +1,8 @@
+@mixin smartphone {
+  @media all and (max-width: 767px) {
+    @content;
+  }
+}
 @mixin tablet {
   @media all and (min-width: 768px) {
     @content;
@@ -7,6 +12,12 @@
   @media all and (min-width: 1200px) {
     @content;
   }
+}
+
+@mixin font-normal {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
 }
 
 @mixin contact {
