@@ -14,12 +14,10 @@
     font-family: $font-main;
     font-size: 22px;
     color: $color-tertiary;
-    letter-spacing: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 45px;
     text-align: center;
     font-weight: 500;
+    @include font-normal;
   }
 }
 
@@ -63,30 +61,27 @@
   color: $color-tertiary;
   font-size: 24px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   text-align: center;
   line-height: 45px;
   text-align: center;
-  padding-bottom: 15px;
-  font-weight: 500;
+  padding: 0 0 15px 0;
+  @include font-normal;
 }
 
 .story__text,
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
-  font-family: $font-secondary;
   font-size: 16px;
   line-height: 24px;
-  color: $color-secondary;
   text-align: center;
+  color: $color-secondary;
+  font-family: $font-secondary;
 }
 
 .aboutUS__strengths--text,
 .aboutUS__weaknesses--text {
   @include tablet {
-    padding-top: 15px;
+    padding: 15px 0 0 0;
   }
 }
 
