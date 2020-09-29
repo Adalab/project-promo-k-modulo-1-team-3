@@ -32,3 +32,8 @@
   font-family: $font-secondary;
   font-size: 14px;
 }
+
+@mixin spin-effect {
+  animation-name: spin;
+  animation: spin 0.8s once linear;
+}

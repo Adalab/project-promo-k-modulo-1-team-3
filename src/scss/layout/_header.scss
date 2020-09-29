@@ -38,6 +38,9 @@
     height: 110px;
     width: 190px;
     margin: 0 auto;
+    :hover {
+      @include spin-effect;
+    }
     @include tablet {
       margin-left: 0;
     }
