@@ -4,7 +4,7 @@ Welcome to our first collaborative web!
 
 # Las Chicas del Coding
 
-We are Arantxa, Araceli, Milda, Celia & Ana. Our team name was inspired by the story of Las Chicas del Cable show, whose main characters had the courage to face the social restrictions of their time and fought to find their way in a male-dominated world. We too are five brave women starting our path in front-end development at [Adalab](https://github.com/Adalab), and we will do our best to become the best!
+We are [Arantxa](https://github.com/ArantxaDR), [Araceli](https://github.com/AraceliLobo), [Milda](https://github.com/Milda-Grabyte), [Celia](https://github.com/Celiamf) & [Ana](https://github.com/anamartinezfernandez). Our team name was inspired by the story of Las Chicas del Cable show, whose main characters had the courage to face the social restrictions of their time and fought to find their way in a male-dominated world. We too are five brave women starting our path in front-end development at [Adalab](https://github.com/Adalab), and we will do our best to become the best!
 
 Visit our web site [here](http://beta.adalab.es/project-promo-k-modulo-1-team-3/) to learn more about us!
 
